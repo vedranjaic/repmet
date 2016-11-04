@@ -1,0 +1,9 @@
+<li class="main-menu-item has-submenu @@main-menu-active-state">
+	<a href="#@@main-menu-collapseID" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
+		@@main-menu-item
+		<span class="submenu-arrow transition">
+			<i class="fa fa-angle-right"></i>
+		</span>
+	</a>
+	@@include('_main-menu-submenu-item.html', {"collapse-submenu-state": "@@collapse-submenu-state", "main-submenu-collapseID": "@@main-menu-collapseID"})
+</li>

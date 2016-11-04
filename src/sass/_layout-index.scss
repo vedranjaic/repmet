@@ -1,0 +1,9 @@
+// Index
+.form-group {
+	&-select {
+		select {
+			display: inline;
+			width: 10%;
+		}
+	}
+}

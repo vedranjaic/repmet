@@ -1,0 +1,90 @@
+// Template
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: $font-cond-regular;
+	// background-color: $grey-light-1;
+	background-color: $grey-dark;
+}
+
+// Forms
+.form-control {
+	background-color: $grey-dark;
+	border: 1px solid lighten($grey-dark, 10%);
+	color: $grey-light-2;
+}
+
+// Input sizing
+.input-sm {
+	height: 26px;
+	line-height: 26px;
+}
+
+// Buttons
+.btn {
+	background-color: transparent;
+}
+
+// Content
+.content {
+	color: $grey-light-2;
+	margin-left: 350px;
+	margin-right: 50px;
+	margin-top: 100px;
+	&:before {
+		content: '';
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		z-index: -2;
+		left: 0;
+		right: 0;
+		background-image: -webkit-radial-gradient(top, circle cover, #393b45 0%, #2d3038 70%);
+		background-image: -moz-radial-gradient(center, circle cover, #393b45 0%, #2d3038 70%);
+		background-image: -o-radial-gradient(center, circle cover, #393b45 0%, #2d3038 70%);
+		background-image: radial-gradient(center, circle cover, #393b45 0%, #2d3038 70%);
+		background-position: 50%, 50%;
+	}
+	.main-menu-closed & {
+		margin-left: 20px;
+	}
+}
+
+// Heading titles
+.page-heading {
+	padding-bottom: 30px;
+	&:before {
+		content: '\f233';
+		font-family: 'FontAwesome';
+		color: $pbz-red;
+		opacity: 0.5;
+		display: inline-block;
+		float: left;
+		font-size: 4em;
+		margin-right: 20px;
+	}
+	.page-title {
+		color: $white;
+		padding-top: 12px;
+		padding-bottom: 25px;
+		border-bottom: 1px solid lighten($grey-dark, 10%);
+		position: relative;
+		small {
+			color: $grey-medium-2;
+			display: block;
+			margin-top: 7px;
+		}
+		.page-type {
+			position: absolute;
+			right: 0;
+			top: 10px;
+			font-size: 2em;
+			text-transform: uppercase;
+			font-family: $font-cond-bold;
+			opacity: 0.07;
+		}
+	}
+}
