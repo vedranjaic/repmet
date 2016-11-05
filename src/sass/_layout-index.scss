@@ -7,3 +7,16 @@
 		}
 	}
 }
+
+// Row control
+.row-control {
+	table {
+		thead {
+			th {
+				&:first-child {
+					width: 180px;
+				}
+			}
+		}
+	}
+}

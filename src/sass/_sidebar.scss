@@ -88,12 +88,16 @@
 		position: fixed;
 		width: 300px;
 		bottom: 0;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		background-color: darken($grey-dark, 2%);
 		.master-brand {
-			width: 140px;
-			opacity: 0.1;
+			width: 120px;
+			opacity: 0.2;
+		}
+		.main-menu-closed & {
+			width: 0;
+			overflow: hidden;
 		}
 	}
 }

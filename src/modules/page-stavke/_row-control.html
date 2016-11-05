@@ -1,0 +1,74 @@
+<div class="row-control section-bg row">
+	<div class="col-sm-6">
+		<h4>Retci</h4>
+	</div>
+	<!-- /.col-sm-6 -->
+	<div class="form-group form-group-select text-right col-sm-6">
+		<label for="row-level">Odaberite dubinu nivoa za prikaz:</label>
+		<select class="form-control input-sm" id="row-level">
+			<option selected>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+	</div>
+	<!-- /.col-sm-6 -->
+
+	<div class="row-control-table table-responsive col-sm-12">
+		<table class="table table-hover table-condensed">
+			<thead>
+				<tr>
+					<th>Šifra</th>
+					<th>Naziv (HR)</th>
+					<th>Naziv (EN)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="table-row-l0">
+					<td>
+						<i class="fa fa-plus-square-o"></i> 
+						A
+					</td>
+					<td>Aktiva</td>
+					<td>Active</td>
+				</tr>
+				@@include('_row-control-level.html', {"table-level": "l1", "table-level-visibility": "hidden", "table-code": "A1", "table-desc": "Potražnja po kreditu (glavnica)"})
+				@@include('_row-control-level.html', {"table-level": "l1", "table-level-visibility": "hidden", "table-code": "-A1a", "table-desc": "- od toga VP raspoređeni u portfelj kredita i potraživanja"})
+				@@include('_row-control-level.html', {"table-level": "l2", "table-level-visibility": "hidden", "table-code": "-A1a1", "table-desc": "Dospjela potraživanja"})
+				@@include('_row-control-level.html', {"table-level": "l2", "table-level-visibility": "hidden", "table-code": "-A1a2", "table-desc": "Nedospjela potraživanja"})
+				@@include('_row-control-level.html', {"table-level": "l1", "table-level-visibility": "hidden", "table-code": "A2", "table-desc": "Potražnja po kamati"})
+				@@include('_row-control-level.html', {"table-level": "l1", "table-level-visibility": "hidden", "table-code": "-A2a", "table-desc": "- od toga potraživanja po zateznoj kamati - credit scoring"})
+				@@include('_row-control-level.html', {"table-level": "l1", "table-level-visibility": "hidden", "table-code": "-A2b", "table-desc": "- od toga potraživanja po zatezi - pp naknade"})
+				@@include('_row-control-level.html', {"table-level": "l1", "table-level-visibility": "hidden", "table-code": "-A2c", "table-desc": "- od toga pretraživanje po kamati za VP koji ne ulaze u kreditni portfelj"})
+				@@include('_row-control-level.html', {"table-level": "l1", "table-level-visibility": "hidden", "table-code": "-A2d", "table-desc": "- od toga pretraživanja po kamati za VP koji ulaze u kreditni portfelj"})
+				<tr>
+					<td>
+						<i class="fa fa-plus-square-o"></i> 
+						O
+					</td>
+					<td>Ostale stavke</td>
+					<td>Other</td>
+				</tr>
+				<tr>
+					<td>
+						<i class="fa fa-plus-square-o"></i> 
+						I
+					</td>
+					<td>Izvanbilančna izloženost</td>
+					<td>Off-balance sheet exposure</td>
+				</tr>
+				<tr>
+					<td>
+						<i class="fa fa-plus-square-o"></i> 
+						P
+					</td>
+					<td>Pasiva</td>
+					<td>Passive</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- /.row-control-table -->
+</div>
+<!-- /.row-control -->

@@ -21,8 +21,8 @@
 .navbar-brand {
 	width: 300px;
 	min-height: 70px;
-	padding-top: 25px;
-	background-color: darken($pbz-red, 10%);
+	padding: 26px 15px;
+	background-color: $pbz-red;
 	&:hover,
 	&:focus {
 		background-color: $pbz-red !important;
@@ -34,7 +34,10 @@
 
 // Navbar form
 .navbar-form {
-	padding: 6px 15px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 // Collapse
@@ -69,24 +72,107 @@
 
 // Search
 .search {
-	.form-control {
-		font-size: 1.4em;
-		max-width: 200px;
-		background-color: $white;
-		border: 0;
-		box-shadow: none;
-	}
+	// Search toggle icon
 	.btn-search {
 		font-size: 1.4em;
+		color: $grey-medium-2;
+		padding: 24px 25px;
+	}
+	.search-bar {
+		@include transition;
+		position: relative;
+		width: 400px;
+		&.search-collapsed {
+			width: 0;
+			overflow: hidden;
+		}
+	}
+	// Reset search
+	.btn-search-reset {
+		@include transition;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 1.4em;
+		color: $grey-light-2;
+		padding: 15px 25px;
+		&:hover,
+		&:focus {
+			color: $grey-medium-2;
+		}
+	}
+	#search-input {
+		font-size: 1.8em;
+		background-color: $white;
+		color: $grey-medium-2;
+		// max-width: 200px;
+		padding: 10px 0;
+		height: 60px;
+		width: 100%;
+		border: 0;
+		box-shadow: none;
+		// Search autocomplete
+		&:-webkit-autofill {
+		    -webkit-box-shadow: 0 0 0 50px white inset;
+		    // -webkit-text-fill-color: $grey-medium-2 !important;
+		}
+		// Search placeholder
+		&::-webkit-input-placeholder {
+			color: $grey-light-2;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+			color: $grey-light-2;  
+		}
+		&::-moz-placeholder {  /* Firefox 19+ */
+			color: $grey-light-2;  
+		}
+		&:-ms-input-placeholder {  
+			color: $grey-light-2;  
+		}
+		// Check if input is not empty
+		&:not([value=""]) {
+			& + .btn-search-reset {
+				opacity: 1;
+			}
+		}
+		&[value=""] {
+			& + .btn-search-reset {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+// Options
+.toolbar-options {
+	float: left;
+	position: relative;
+	.btn-options {
+		font-size: 1.4em;
+		color: $grey-medium-2;
+		padding: 20px 22px;
+		.fa {
+			margin-left: 10px;
+		}
 	}
 }
 
 // Profile
-.profile {
+.toolbar-profile {
 	float: left;
 	margin-right: 50px;
 	position: relative;
-	&-name {
+	.profile-notifications {
+		padding-right: 23px;
+		.badge {
+			background-color: $pbz-red;
+			font-size: 10px;
+			margin-top: -2em;
+			margin-left: -0.4em;
+		}
+	}
+	.profile-name {
 		padding-top: 23px;
 		padding-bottom: 20px;
 		font-size: 1.1em;
@@ -101,7 +187,7 @@
 			margin-left: 5px;
 		}
 	}
-	&-image {
+	.profile-image {
 		margin-top: -3px;
 		margin-left: 10px;
 		border-radius: 50%;
@@ -109,3 +195,11 @@
 }
 
 // Language
+.options-language {
+	img {
+		max-width: 15px;
+		margin-right: 5px;
+	}
+}
+
+

@@ -777,193 +777,117 @@
 	<section class="content transition">
 		
 		<!-- PAGE HEADING -->
-		<div class="page-heading page-type-stavka">
+		<div class="page-heading page-type-pravila">
 			<h3 class="page-title">
-				Generic - Org za BU
+				Generic - Org za BU / -A1a1 Dospijela potraživanja
 				<small class="page-category">DWH Proizvodi</small>
-				<span class="page-type">Stavke</span>
+				<span class="page-type">Pravila</span>
 			</h3>
 		</div>
 		<!-- /.page-heading -->
 		
-		<!-- TABLES -->
-		<div class="row-control section-bg row">
+		<!-- RULES -->
+		<div class="row">
 			<div class="col-sm-6">
-				<h4>Retci</h4>
-			</div>
-			<!-- /.col-sm-6 -->
-			<div class="form-group form-group-select text-right col-sm-6">
-				<label for="row-level">Odaberite dubinu nivoa za prikaz:</label>
-				<select class="form-control input-sm" id="row-level">
-					<option selected>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-				</select>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Prikaži pravila definirana kroz kriterij:</h3>
+					</div>
+					<div class="panel-body">
+						<div class="checkbox">
+							<input id="checkbox01" type="checkbox" checked>
+							<label for="checkbox01">Konto</label>
+						</div>
+						<div class="checkbox">
+							<input id="checkbox02" type="checkbox">
+							<label for="checkbox02">Nis_vrsta_posla</label>
+						</div>
+						<div class="checkbox">
+							<input id="checkbox03" type="checkbox">
+							<label for="checkbox03">Konto_bil_vanbil</label>
+						</div>
+						<div class="checkbox">
+							<input id="checkbox04" type="checkbox" checked>
+							<label for="checkbox04">Konto_dosp</label>
+						</div>
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">KONTO</h3>
+					</div>
+					<div class="panel-body table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>KONTO like</th>
+									<th class="text-center">uklj./isklj.</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>34___50</td>
+									<td align="center"><i class="fa fa-plus"></i></td>
+								</tr>
+								<tr>
+									<td>5000259</td>
+									<td align="center"><i class="fa fa-plus"></i></td>
+								</tr>
+								<tr>
+									<td>5____50</td>
+									<td align="center"><i class="fa fa-plus"></i></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">KONTO_DOSP</h3>
+					</div>
+					<div class="panel-body table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>KONTO_DOSP like</th>
+									<th class="text-center">uklj./isklj.</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Dospijeli dug</td>
+									<td align="center"><i class="fa fa-plus"></i></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel -->
 			</div>
 			<!-- /.col-sm-6 -->
 
-			<div class="row-control-table table-responsive col-sm-12">
-				<table class="table table-hover table-condensed">
-					<thead>
-						<tr>
-							<th>Šifra</th>
-							<th>Naziv (HR)</th>
-							<th>Naziv (EN)</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class="table-row-l0">
-							<td>
-								<i class="fa fa-plus-square-o"></i> 
-								A
-							</td>
-							<td>Aktiva</td>
-							<td>Active</td>
-						</tr>
-						<tr class="table-row-l1 hidden">
-							<td>
-								<i class="fa fa-plus-square-o"></i> 
-								A1
-							</td>
-							<td>Potražnja po kreditu (glavnica)</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr class="table-row-l1 hidden">
-							<td>
-								<i class="fa fa-plus-square-o"></i> 
-								-A1a
-							</td>
-							<td>- od toga VP raspoređeni u portfelj kredita i potraživanja</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr class="table-row-l2 hidden">
-							<td>
-								<i class="fa fa-plus-square-o"></i> 
-								-A1a1
-							</td>
-							<td>Dospjela potraživanja</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr class="table-row-l2 hidden">
-							<td>
-								<i class="fa fa-plus-square-o"></i> 
-								-A1a2
-							</td>
-							<td>Nedospjela potraživanja</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr class="table-row-l1 hidden">
-							<td>
-								<i class="fa fa-plus-square-o"></i> 
-								A2
-							</td>
-							<td>Potražnja po kamati</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr class="table-row-l1 hidden">
-							<td>
-								<i class="fa fa-plus-square-o"></i> 
-								-A2a
-							</td>
-							<td>- od toga potraživanja po zateznoj kamati - credit scoring</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr class="table-row-l1 hidden">
-							<td>
-								<i class="fa fa-plus-square-o"></i> 
-								-A2b
-							</td>
-							<td>- od toga potraživanja po zatezi - pp naknade</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr class="table-row-l1 hidden">
-							<td>
-								<i class="fa fa-plus-square-o"></i> 
-								-A2c
-							</td>
-							<td>- od toga pretraživanje po kamati za VP koji ne ulaze u kreditni portfelj</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr class="table-row-l1 hidden">
-							<td>
-								<i class="fa fa-plus-square-o"></i> 
-								-A2d
-							</td>
-							<td>- od toga pretraživanja po kamati za VP koji ulaze u kreditni portfelj</td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr>
-							<td>
-								<i class="fa fa-plus-square-o"></i> 
-								O
-							</td>
-							<td>Ostale stavke</td>
-							<td>Other</td>
-						</tr>
-						<tr>
-							<td>
-								<i class="fa fa-plus-square-o"></i> 
-								I
-							</td>
-							<td>Izvanbilančna izloženost</td>
-							<td>Off-balance sheet exposure</td>
-						</tr>
-						<tr>
-							<td>
-								<i class="fa fa-plus-square-o"></i> 
-								P
-							</td>
-							<td>Pasiva</td>
-							<td>Passive</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<!-- /.row-control-table -->
-		</div>
-		<!-- /.row-control -->
-		<div class="column-control section-bg row">
 			<div class="col-sm-6">
-				<h4>Kolone</h4>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Stavka je povezana s pravilima iz drugih stavki:</h3>
+					</div>
+					<div class="panel-body">
+						<div class="alert alert-danger">
+							<i class="fa fa-warning"></i> Ne postoje zapisi s referenciranim pravilima
+						</div>
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel -->
 			</div>
 			<!-- /.col-sm-6 -->
-			<div class="form-group form-group-select text-right col-sm-6">
-				<label for="row-level">Odaberite dubinu nivoa za prikaz:</label>
-				<select class="form-control input-sm" id="row-level">
-					<option selected>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-				</select>
-			</div>
-			<!-- /.col-sm-6 -->
-
-			<div class="column-control-table table-responsive col-sm-12">
-				<table class="table table-condensed">
-					<thead>
-						<tr>
-							<th>Šifra</th>
-							<th>Naziv (HR)</th>
-							<th>Naziv (EN)</th>
-							<th>Izvor podataka</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td colspan="4">
-								<i class="fa fa-warning"></i> 
-								Nema podataka
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<!-- /.column-control-table -->
 		</div>
-		<!-- /.column-control -->
+		<!-- /.row -->
 
 	</section>
 	<!-- /.content -->

@@ -1,0 +1,122 @@
+@@include('modules/_header.html')
+
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+	@@include('modules/_sidebar.html')
+	@@include('modules/_toolbar.html')
+
+	<section class="content transition">
+		
+		<!-- PAGE HEADING -->
+		@@include('modules/template/_page-heading.html', {"page-icon": "pravila", "page-heading-title": "Generic - Org za BU / -A1a1 Dospijela potraživanja", "page-heading-category": "DWH Proizvodi", "page-heading-type": "Pravila"})
+		
+		<!-- RULES -->
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Prikaži pravila definirana kroz kriterij:</h3>
+					</div>
+					<div class="panel-body">
+						<div class="checkbox">
+							<input id="checkbox01" type="checkbox" checked>
+							<label for="checkbox01">Konto</label>
+						</div>
+						<div class="checkbox">
+							<input id="checkbox02" type="checkbox">
+							<label for="checkbox02">Nis_vrsta_posla</label>
+						</div>
+						<div class="checkbox">
+							<input id="checkbox03" type="checkbox">
+							<label for="checkbox03">Konto_bil_vanbil</label>
+						</div>
+						<div class="checkbox">
+							<input id="checkbox04" type="checkbox" checked>
+							<label for="checkbox04">Konto_dosp</label>
+						</div>
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">KONTO</h3>
+					</div>
+					<div class="panel-body table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>KONTO like</th>
+									<th class="text-center">uklj./isklj.</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>34___50</td>
+									<td align="center"><i class="fa fa-plus"></i></td>
+								</tr>
+								<tr>
+									<td>5000259</td>
+									<td align="center"><i class="fa fa-plus"></i></td>
+								</tr>
+								<tr>
+									<td>5____50</td>
+									<td align="center"><i class="fa fa-plus"></i></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">KONTO_DOSP</h3>
+					</div>
+					<div class="panel-body table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>KONTO_DOSP like</th>
+									<th class="text-center">uklj./isklj.</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Dospijeli dug</td>
+									<td align="center"><i class="fa fa-plus"></i></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel -->
+			</div>
+			<!-- /.col-sm-6 -->
+
+			<div class="col-sm-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Stavka je povezana s pravilima iz drugih stavki:</h3>
+					</div>
+					<div class="panel-body">
+						<div class="alert alert-danger">
+							<i class="fa fa-warning"></i> Ne postoje zapisi s referenciranim pravilima
+						</div>
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel -->
+			</div>
+			<!-- /.col-sm-6 -->
+		</div>
+		<!-- /.row -->
+
+	</section>
+	<!-- /.content -->
+
+
+@@include('modules/_footer.html')
