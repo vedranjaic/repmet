@@ -798,154 +798,33 @@
 		<!-- PAGE HEADING -->
 		<div class="page-heading page-type-stavka">
 			<h3 class="page-title">
-				Izloženost i obveze
+				Izvješća
 				<small class="page-category">DWH Proizvodi</small>
 				<span class="page-type">Stavke</span>
 			</h3>
 		</div>
 		<!-- /.page-heading -->
 		
-		<!-- TABLES -->
-		<div class="row-control row">
+		<!-- REPORTS -->
+		<div class="edit-reports row">
 			<div class="col-sm-12">
 				<div class="panel panel-default">
-					<div class="panel-heading panel-columns">
-						<div class="col-sm-6">
-							<h3 class="panel-title">Retci</h3>
-						</div>
-						<!-- /.col-sm-6 -->
-						<div class="form-group form-group-select text-right col-sm-6">
-							<label for="row-level">Odaberite dubinu nivoa za prikaz:</label>
-							<select class="row-control-level-select form-control input-sm" id="row-level">
-								<option selected>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-							</select>
-						</div>
-						<!-- /.col-sm-6 -->
+					<div class="panel-heading panel-tabs">
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Općeniti podaci</a></li>
+							<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Verzija</a></li>
+							<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Definiranje</a></li>
+							<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Uloge</a></li>
+						</ul>
 					</div>
 					<!-- /.panel-heading -->
 					<div class="panel-body">
-						<div class="row-control-table table-responsive">
-							<table class="table table-hover table-condensed">
-								<thead>
-									<tr>
-										<th>Šifra</th>
-										<th>Naziv (HR)</th>
-										<th>Naziv (EN)</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr class="table-row-l0">
-										<td>
-											<i class="fa fa-plus-square-o"></i> 
-											A
-										</td>
-										<td>Aktiva</td>
-										<td>Active</td>
-									</tr>
-										<tr class="table-row-l1 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												A1
-											</td>
-											<td>Potražnja po kreditu (glavnica)</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l1 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												-A1a
-											</td>
-											<td>- od toga VP raspoređeni u portfelj kredita i potraživanja</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l2 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												-A1a1
-											</td>
-											<td>Dospjela potraživanja</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l2 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												-A1a2
-											</td>
-											<td>Nedospjela potraživanja</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l1 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												A2
-											</td>
-											<td>Potražnja po kamati</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l1 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												-A2a
-											</td>
-											<td>- od toga potraživanja po zateznoj kamati - credit scoring</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l1 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												-A2b
-											</td>
-											<td>- od toga potraživanja po zatezi - pp naknade</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l1 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												-A2c
-											</td>
-											<td>- od toga pretraživanje po kamati za VP koji ne ulaze u kreditni portfelj</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l1 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												-A2d
-											</td>
-											<td>- od toga pretraživanja po kamati za VP koji ulaze u kreditni portfelj</td>
-											<td>&nbsp;</td>
-										</tr>
-									<tr>
-										<td>
-											<i class="fa fa-plus-square-o"></i> 
-											O
-										</td>
-										<td>Ostale stavke</td>
-										<td>Other</td>
-									</tr>
-									<tr>
-										<td>
-											<i class="fa fa-plus-square-o"></i> 
-											I
-										</td>
-										<td>Izvanbilančna izloženost</td>
-										<td>Off-balance sheet exposure</td>
-									</tr>
-									<tr>
-										<td>
-											<i class="fa fa-plus-square-o"></i> 
-											P
-										</td>
-										<td>Pasiva</td>
-										<td>Passive</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="home">1</div>
+							<div role="tabpanel" class="tab-pane" id="profile">2</div>
+							<div role="tabpanel" class="tab-pane" id="messages">3</div>
+							<div role="tabpanel" class="tab-pane" id="settings">4</div>
 						</div>
-						<!-- /.row-control-table -->
 					</div>
 					<!-- /.panel-body -->
 				</div>
@@ -953,58 +832,7 @@
 			</div>
 			<!-- /.col-sm-12 -->
 		</div>
-		<!-- /.row-control -->
-		<div class="column-control row">
-			<div class="col-sm-12">
-				<div class="panel panel-default">
-					<div class="panel-heading panel-columns">
-						<div class="col-sm-6">
-							<h3 class="panel-title">Kolone</h3>
-						</div>
-						<!-- /.col-sm-6 -->
-						<div class="form-group form-group-select text-right col-sm-6">
-							<label for="row-level">Odaberite dubinu nivoa za prikaz:</label>
-							<select class="row-control-level-select form-control input-sm" id="column-level">
-								<option selected>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-							</select>
-						</div>
-						<!-- /.col-sm-6 -->
-					</div>
-					<!-- /.panel-heading -->
-					<div class="panel-body">
-						<div class="column-control-table table-responsive">
-							<table class="table table-hover table-condensed">
-								<thead>
-									<tr>
-										<th>Šifra</th>
-										<th>Naziv (HR)</th>
-										<th>Naziv (EN)</th>
-										<th>Izvor podataka</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr class="table-no-data">
-										<td colspan="4">
-											<i class="icon fa fa-warning"></i> 
-											Nema podataka
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<!-- /.column-control-table -->
-					</div>
-					<!-- /.panel-body -->
-				</div>
-				<!-- .panel -->
-			</div>
-			<!-- /.col-sm-12 -->
-		</div>
-		<!-- /.column-control -->
+		<!-- /.edit-reports -->
 
 	</section>
 	<!-- /.content -->

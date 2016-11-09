@@ -1,5 +1,11 @@
 # RepMet
 
+### Administracija
+- dodati `.administration` klasu u `<body>` za vrijeme administracije sadržaja
+
+### Theme
+- u `<body>` togglati klasu `.theme-light` i `.theme-dark`
+
 ### Panels
 - kolumne unutar `.panela` moraju imati klasu na parentu `.panel-columns` (npr. `.panel-heading.panel-columns`)
 

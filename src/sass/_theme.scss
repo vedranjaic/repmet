@@ -6,6 +6,18 @@
 		background-color: $grey-dark;
 		border: 1px solid lighten($grey-dark, 10%);
 		color: $grey-light-2;
+		&::-webkit-input-placeholder {
+			color: lighten($grey-dark, 10%);
+		}
+		&::-moz-placeholder {
+			color: lighten($grey-dark, 10%);
+		}
+		&:-ms-input-placeholder {
+			color: lighten($grey-dark, 10%);
+		}
+		&:-moz-placeholder {
+			color: lighten($grey-dark, 10%);
+		}
 	}
 	// Checkboxes
 	.checkbox {
@@ -69,11 +81,30 @@
 	}
 	// Panels
 	.panel {
-		background-color: rgba($grey-medium-2, 0.1);
-		&-default {
+		&.panel-default {
 			& > .panel-heading {
+				background-color: rgba($grey-medium-2, 0.1);
 				border-bottom-color: $grey-dark;
 				color: $white;
+				// Panel tabs
+				&.panel-tabs {
+					.nav-tabs {
+						li {
+							&.active {
+								a {
+									background-color: rgba($grey-medium-2, 0.1);
+								}
+							}
+							a {
+								color: $white;
+								background-color: rgba($grey-medium-2, 0.05);
+							}
+						}
+					}
+				}
+			}
+			& > .panel-body {
+				background-color: rgba($grey-medium-2, 0.1);
 			}
 		}
 	}
@@ -87,6 +118,18 @@
 		background-color: $grey-medium-2;
 		border: 1px solid transparent;
 		color: $grey-light-1;
+		&::-webkit-input-placeholder {
+			color: darken($grey-medium-1, 10%);
+		}
+		&::-moz-placeholder {
+			color: darken($grey-medium-1, 10%);
+		}
+		&:-ms-input-placeholder {
+			color: darken($grey-medium-1, 10%);
+		}
+		&:-moz-placeholder {
+			color: darken($grey-medium-1, 10%);
+		}
 	}
 	// Checkboxes
 	.checkbox {
@@ -150,12 +193,32 @@
 	}
 	// Panels
 	.panel {
-		background-color: rgba($grey-dark, 0.1);
-		&-default {
+		&.panel-default {
 			& > .panel-heading {
+				background-color: rgba($grey-dark, 0.1);
 				border-bottom-color: lighten($grey-medium-2, 18%) !important;
 				color: darken($grey-medium-2, 15%);
+				// Panel tabs
+				&.panel-tabs {
+					.nav-tabs {
+						li {
+							&.active {
+								a {
+									color: $grey-dark;
+									background-color: rgba($grey-dark, 0.1);
+								}
+							}
+							a {
+								color: $grey-medium-2;
+								background-color: rgba($grey-dark, 0.05);
+							}
+						}
+					}
+				}
 			}
+		}
+		& > .panel-body {
+			background-color: rgba($grey-dark, 0.1);
 		}
 	}
 }

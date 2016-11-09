@@ -798,154 +798,149 @@
 		<!-- PAGE HEADING -->
 		<div class="page-heading page-type-stavka">
 			<h3 class="page-title">
-				Izloženost i obveze
+				Grupe
 				<small class="page-category">DWH Proizvodi</small>
 				<span class="page-type">Stavke</span>
 			</h3>
 		</div>
 		<!-- /.page-heading -->
 		
-		<!-- TABLES -->
-		<div class="row-control row">
-			<div class="col-sm-12">
+		<!-- GRUPE -->
+		<div class="edit-new-group row">
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Poredak grupa</h3>
+					</div>
+					<!-- /.panel-heading -->
+					<div class="panel-body">
+
+						<div class="dd" id="nestable">
+							<ol class="dd-list">
+								<li class="dd-item" data-id="1">
+									<div class="dd-handle">ALM</div>
+								</li>
+								<li class="dd-item" data-id="2">
+									<div class="dd-handle">DWH Proizvodi</div>
+									<ol class="dd-list">
+										<li class="dd-item" data-id="3"><div class="dd-handle">Izvještaj</div></li>
+										<li class="dd-item" data-id="4"><div class="dd-handle">Izvještaj i obveze</div></li>
+										<li class="dd-item" data-id="5"><div class="dd-handle">Generic - Org za BU</div></li>
+										<li class="dd-item" data-id="6"><div class="dd-handle">Generic - Pravila knjiženja</div></li>
+									</ol>
+								</li>
+								<li class="dd-item" data-id="7">
+									<div class="dd-handle">Enterprise reporting</div>
+								</li>
+								<li class="dd-item" data-id="8">
+									<div class="dd-handle">HNB izvještaji</div>
+								</li>
+							</ol>
+						</div>
+
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel-panel-default -->
+			</div>
+			<!-- /.col-sm-4 -->
+			<div class="col-sm-8">
 				<div class="panel panel-default">
 					<div class="panel-heading panel-columns">
 						<div class="col-sm-6">
-							<h3 class="panel-title">Retci</h3>
+							<h3 class="panel-title">Dodaj novu grupu</h3>
 						</div>
 						<!-- /.col-sm-6 -->
-						<div class="form-group form-group-select text-right col-sm-6">
-							<label for="row-level">Odaberite dubinu nivoa za prikaz:</label>
-							<select class="row-control-level-select form-control input-sm" id="row-level">
-								<option selected>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-							</select>
+						<div class="text-right col-sm-6">
+							<h3 class="panel-title">ID: 1234567899</h3>
 						</div>
 						<!-- /.col-sm-6 -->
 					</div>
 					<!-- /.panel-heading -->
 					<div class="panel-body">
-						<div class="row-control-table table-responsive">
-							<table class="table table-hover table-condensed">
-								<thead>
-									<tr>
-										<th>Šifra</th>
-										<th>Naziv (HR)</th>
-										<th>Naziv (EN)</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr class="table-row-l0">
-										<td>
-											<i class="fa fa-plus-square-o"></i> 
-											A
-										</td>
-										<td>Aktiva</td>
-										<td>Active</td>
-									</tr>
-										<tr class="table-row-l1 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												A1
-											</td>
-											<td>Potražnja po kreditu (glavnica)</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l1 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												-A1a
-											</td>
-											<td>- od toga VP raspoređeni u portfelj kredita i potraživanja</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l2 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												-A1a1
-											</td>
-											<td>Dospjela potraživanja</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l2 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												-A1a2
-											</td>
-											<td>Nedospjela potraživanja</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l1 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												A2
-											</td>
-											<td>Potražnja po kamati</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l1 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												-A2a
-											</td>
-											<td>- od toga potraživanja po zateznoj kamati - credit scoring</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l1 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												-A2b
-											</td>
-											<td>- od toga potraživanja po zatezi - pp naknade</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l1 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												-A2c
-											</td>
-											<td>- od toga pretraživanje po kamati za VP koji ne ulaze u kreditni portfelj</td>
-											<td>&nbsp;</td>
-										</tr>
-										<tr class="table-row-l1 hidden">
-											<td>
-												<i class="icon fa fa-plus-square-o"></i> 
-												-A2d
-											</td>
-											<td>- od toga pretraživanja po kamati za VP koji ulaze u kreditni portfelj</td>
-											<td>&nbsp;</td>
-										</tr>
-									<tr>
-										<td>
-											<i class="fa fa-plus-square-o"></i> 
-											O
-										</td>
-										<td>Ostale stavke</td>
-										<td>Other</td>
-									</tr>
-									<tr>
-										<td>
-											<i class="fa fa-plus-square-o"></i> 
-											I
-										</td>
-										<td>Izvanbilančna izloženost</td>
-										<td>Off-balance sheet exposure</td>
-									</tr>
-									<tr>
-										<td>
-											<i class="fa fa-plus-square-o"></i> 
-											P
-										</td>
-										<td>Pasiva</td>
-										<td>Passive</td>
-									</tr>
-								</tbody>
-							</table>
+						<form>
+							<div class="row">
+								<div class="form-group col-sm-8">
+									<label for="grupa-naziv-grupe">Naziv grupe:</label>
+									<input type="input" class="form-control" id="grupa-naziv-grupe">
+								</div>
+								<div class="form-group col-sm-2">
+									<label for="grupa-sifra-grupe">Šifra:</label>
+									<input type="input" class="form-control" id="grupa-sifra-grupe" placeholder="A101">
+								</div>
+								<div class="form-group col-sm-2">
+									<label for="grupa-rbr-grupe">R. br.:</label>
+									<input type="input" class="form-control" id="grupa-rbr-grupe" placeholder="1">
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-sm-12">
+									<label for="grupa-opis-grupe">Opis:</label>
+									<textarea class="form-control" rows="3" id="grupa-opis-grupe"></textarea>
+								</div>
+							</div>
+						</form>
+						<div class="translation">
+							<a class="btn-block" data-toggle="collapse" href="#collapseExampleEN" aria-expanded="false" aria-controls="collapseExampleEN">
+								<i class="icon fa fa-plus"></i> Add EN
+							</a>
+							<div class="collapse" id="collapseExampleEN">
+								<!-- <img src="assets/images/flags/gb.svg" alt="EN" class="language-flag"> ENGLISH -->
+								<form>
+									<div class="row">
+										<div class="form-group col-sm-8">
+											<label for="grupa-naziv-grupe">Group name:</label>
+											<input type="input" class="form-control" id="grupa-naziv-grupe">
+										</div>
+										<div class="form-group col-sm-2">
+											<label for="grupa-sifra-grupe">Code:</label>
+											<input type="input" class="form-control" id="grupa-sifra-grupe" placeholder="A101">
+										</div>
+										<div class="form-group col-sm-2">
+											<label for="grupa-rbr-grupe">Num.:</label>
+											<input type="input" class="form-control" id="grupa-rbr-grupe" placeholder="1">
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-sm-12">
+											<label for="grupa-opis-grupe">Description:</label>
+											<textarea class="form-control" rows="3" id="grupa-opis-grupe"></textarea>
+										</div>
+									</div>
+								</form>
+							</div>
+							<!-- /.collapse -->
+							<a class="btn-block" data-toggle="collapse" href="#collapseExampleIT" aria-expanded="false" aria-controls="collapseExampleIT">
+								<i class="icon fa fa-plus"></i> Add IT
+							</a>
+							<div class="collapse" id="collapseExampleIT">
+								<!-- <img src="assets/images/flags/gb.svg" alt="EN" class="language-flag"> ENGLISH -->
+								<form>
+									<div class="row">
+										<div class="form-group col-sm-8">
+											<label for="grupa-naziv-grupe">Nome del gruppo:</label>
+											<input type="input" class="form-control" id="grupa-naziv-grupe">
+										</div>
+										<div class="form-group col-sm-2">
+											<label for="grupa-sifra-grupe">Codice:</label>
+											<input type="input" class="form-control" id="grupa-sifra-grupe" placeholder="A101">
+										</div>
+										<div class="form-group col-sm-2">
+											<label for="grupa-rbr-grupe">Num.:</label>
+											<input type="input" class="form-control" id="grupa-rbr-grupe" placeholder="1">
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-sm-12">
+											<label for="grupa-opis-grupe">Descrizione:</label>
+											<textarea class="form-control" rows="3" id="grupa-opis-grupe"></textarea>
+										</div>
+									</div>
+								</form>
+							</div>
+							<!-- /.collapse -->
 						</div>
-						<!-- /.row-control-table -->
+						<!-- /.translation -->
 					</div>
 					<!-- /.panel-body -->
 				</div>
@@ -953,58 +948,12 @@
 			</div>
 			<!-- /.col-sm-12 -->
 		</div>
-		<!-- /.row-control -->
-		<div class="column-control row">
-			<div class="col-sm-12">
-				<div class="panel panel-default">
-					<div class="panel-heading panel-columns">
-						<div class="col-sm-6">
-							<h3 class="panel-title">Kolone</h3>
-						</div>
-						<!-- /.col-sm-6 -->
-						<div class="form-group form-group-select text-right col-sm-6">
-							<label for="row-level">Odaberite dubinu nivoa za prikaz:</label>
-							<select class="row-control-level-select form-control input-sm" id="column-level">
-								<option selected>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-							</select>
-						</div>
-						<!-- /.col-sm-6 -->
-					</div>
-					<!-- /.panel-heading -->
-					<div class="panel-body">
-						<div class="column-control-table table-responsive">
-							<table class="table table-hover table-condensed">
-								<thead>
-									<tr>
-										<th>Šifra</th>
-										<th>Naziv (HR)</th>
-										<th>Naziv (EN)</th>
-										<th>Izvor podataka</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr class="table-no-data">
-										<td colspan="4">
-											<i class="icon fa fa-warning"></i> 
-											Nema podataka
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<!-- /.column-control-table -->
-					</div>
-					<!-- /.panel-body -->
-				</div>
-				<!-- .panel -->
-			</div>
-			<!-- /.col-sm-12 -->
+		<!-- /.edit-new-group -->
+
+		<div class="admin-toolbar">
+			<button type="submit" class="btn btn-default pull-right">Spremi</button>
 		</div>
-		<!-- /.column-control -->
+		<!-- /.admin-toolbar -->
 
 	</section>
 	<!-- /.content -->

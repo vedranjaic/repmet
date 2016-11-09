@@ -26,11 +26,15 @@
 @import "template";
 @import "typography";
 
+// Plugings
+@import "plugins/nestable";
+
 // Pages layout
 @import "toolbar";
 @import "sidebar";
 @import "notifications";
 @import "layout-index";
+@import "layout-admin";
 @import "footer";
 
 // --------------------------------------[ style.css end ]

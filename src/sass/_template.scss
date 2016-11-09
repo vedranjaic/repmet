@@ -1,7 +1,7 @@
 // Template
 html,
 body {
-	height: 100%;
+	// height: 100%;
 }
 
 body {
@@ -11,6 +11,9 @@ body {
 // Forms
 .form-control {
 	// Theme
+	&:focus {
+		box-shadow: none;
+	}
 }
 
 // Input sizing
@@ -24,6 +27,17 @@ body {
 	background-color: transparent;
 	&-hidden {
 		display: none;
+	}
+	&-default {
+		background-color: $pbz-red;
+		border: 0;
+		color: $white;
+		text-transform: uppercase;
+		&:hover,
+		&:focus {
+			background-color: darken($pbz-red, 5%);
+			color: $white;
+		}
 	}
 }
 
@@ -173,27 +187,52 @@ body {
 
 // Panels
 .panel {
+	background-color: transparent !important;
 	border: 0;
 	border-radius: 2px;
 	box-shadow: none;
 	&.panel-default {
 		// Panel heading
 		& > .panel-heading {
-			background-color: transparent;
 			padding-top: 15px;
 			padding-bottom: 15px;
-			&.panel-columns {
-				@include clearfix;
-				padding-left: 0;
-				padding-right: 0;
-			}
 			.panel-title {
 				font-size: 21px;
 			}
 			.form-group {
 				margin-bottom: 0;
 			}
+			// Panel columns
+			&.panel-columns {
+				@include clearfix;
+				padding-left: 0;
+				padding-right: 0;
+			}
+			// Panel tabs
+			&.panel-tabs {
+				border-bottom: 0;
+				background-color: transparent;
+				padding: 0;
+				.nav-tabs {
+					border-bottom: 0;
+					li {
+						margin-bottom: 0;
+						&.active {
+							a {
+								// bckground-color: 
+							}
+						}
+						a {
+							border: 0;
+							border-radius: 2px 2px 0 0;
+							padding: 15px 30px;
+							font-size: 16px;
+						}
+					}
+				}
+			}
 		}
+		
 	}
 }
 
@@ -205,6 +244,13 @@ body {
 		background-color: rgba($pbz-red, 0.2);
 		border-color: transparent;
 		color: lighten($pbz-red, 10%);
+	}
+}
+
+// Translation
+.translation {
+	.language-flag {
+		width: 16px;
 	}
 }
 

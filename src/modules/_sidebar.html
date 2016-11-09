@@ -1,27 +1,42 @@
-<aside class="main-menu nav transition" id="main-menu-accordion">
+<aside class="main-menu nav transition" id="main-menu-accordion" data-simplebar>
 	<ul class="list-unstyled">
-		<li class="main-menu-title"><i class="fa fa-bars"></i> Menu</li>
+		<li class="main-menu-header clearfix">
+			<span class="main-menu-title pull-left">
+				<i class="icon fa fa-bars"></i> 
+				Izbornik
+			</span>
+			<span class="main-menu-sort pull-right hidden">
+				ABC 
+				<i class="icon fa fa-sort"></i>
+			</span>
+			<div class="main-menu-sort pull-right">
+				<select class="form-control input-sm">
+					<option selected>ABC</option>
+					<option>R.br.</option>
+				</select>
+			</div>
+		</li>
 		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "ALM", "main-menu-active-state": "active", "collapse-submenu-state": "in", "main-menu-collapseID": "collapseSubMenu08"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "DWH Proizvodi", "main-menu-collapseID": "collapseSubMenu10"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Enterprise Reporting", "main-menu-collapseID": "collapseSubMenu11"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "HNB Izvještaji", "main-menu-collapseID": "collapseSubMenu07"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "HROK", "main-menu-collapseID": "collapseSubMenu03"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "IB - Brokersko poslovanje", "main-menu-collapseID": "collapseSubMenu15"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "IB - Skrbništvo", "main-menu-collapseID": "collapseSubMenu16"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Izvodi", "main-menu-collapseID": "collapseSubMenu19"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Kontroling", "main-menu-collapseID": "collapseSubMenu01"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Likvidnost", "main-menu-collapseID": "collapseSubMenu04"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Metodologije za rizike", "main-menu-collapseID": "collapseSubMenu05"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Metodologije za NIS", "main-menu-collapseID": "collapseSubMenu13"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Metodologije za NIS vrste posla", "main-menu-collapseID": "collapseSubMenu17"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Metodologije za SIBS", "main-menu-collapseID": "collapseSubMenu21"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "NGK metodologija", "main-menu-collapseID": "collapseSubMenu18"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Osnovne rač. metodologije", "main-menu-collapseID": "collapseSubMenu20"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Pravila kontnog plana", "main-menu-collapseID": "collapseSubMenu12"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Računovodstvo", "main-menu-collapseID": "collapseSubMenu06"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Rekonsilijacija", "main-menu-collapseID": "collapseSubMenu02"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Riznica - Middle Office", "main-menu-collapseID": "collapseSubMenu09"})
-		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "SME", "main-menu-collapseID": "collapseSubMenu14"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "DWH Proizvodi", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu10"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Enterprise Reporting", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu11"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "HNB Izvještaji", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu07"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "HROK", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu03"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "IB - Brokersko poslovanje", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu15"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "IB - Skrbništvo", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu16"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Izvodi", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu19"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Kontroling", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu01"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Likvidnost", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu04"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Metodologije za rizike", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu05"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Metodologije za NIS", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu13"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Metodologije za NIS vrste posla", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu17"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Metodologije za SIBS", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu21"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "NGK metodologija", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu18"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Osnovne rač. metodologije", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu20"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Pravila kontnog plana", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu12"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Računovodstvo", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu06"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Rekonsilijacija", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu02"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "Riznica - Middle Office", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu09"})
+		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "SME", "main-menu-active-state": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu14"})
 	</ul>
 	<div class="branding-info transition">
 		<a class="master-brand" href="/">

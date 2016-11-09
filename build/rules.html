@@ -17,16 +17,32 @@
 	
 	<!-- scripts -->
 	<script src="assets/js/vendors/modernizr.js"></script>
+	
 </head>
-<body class="theme-light notifications-closed">
+<body class="administration theme-light notifications-closed">
 
 	<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 
-	<aside class="main-menu nav transition" id="main-menu-accordion">
+	<aside class="main-menu nav transition" id="main-menu-accordion" data-simplebar>
 		<ul class="list-unstyled">
-			<li class="main-menu-title"><i class="fa fa-bars"></i> Menu</li>
+			<li class="main-menu-header clearfix">
+				<span class="main-menu-title pull-left">
+					<i class="icon fa fa-bars"></i> 
+					Izbornik
+				</span>
+				<span class="main-menu-sort pull-right hidden">
+					ABC 
+					<i class="icon fa fa-sort"></i>
+				</span>
+				<div class="main-menu-sort pull-right">
+					<select class="form-control input-sm">
+						<option selected>ABC</option>
+						<option>R.br.</option>
+					</select>
+				</div>
+			</li>
 			<li class="main-menu-item has-submenu active">
 				<a href="#collapseSubMenu08" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					ALM
@@ -57,14 +73,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu10" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					DWH Proizvodi
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu10">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu10">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -87,14 +103,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu11" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					Enterprise Reporting
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu11">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu11">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -117,14 +133,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu07" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					HNB Izvještaji
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu07">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu07">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -147,14 +163,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu03" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					HROK
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu03">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu03">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -177,14 +193,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu15" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					IB - Brokersko poslovanje
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu15">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu15">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -207,14 +223,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu16" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					IB - Skrbništvo
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu16">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu16">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -237,14 +253,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu19" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					Izvodi
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu19">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu19">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -267,14 +283,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu01" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					Kontroling
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu01">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu01">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -297,14 +313,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu04" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					Likvidnost
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu04">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu04">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -327,14 +343,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu05" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					Metodologije za rizike
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu05">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu05">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -357,14 +373,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu13" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					Metodologije za NIS
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu13">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu13">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -387,14 +403,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu17" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					Metodologije za NIS vrste posla
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu17">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu17">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -417,14 +433,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu21" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					Metodologije za SIBS
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu21">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu21">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -447,14 +463,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu18" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					NGK metodologija
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu18">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu18">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -477,14 +493,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu20" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					Osnovne rač. metodologije
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu20">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu20">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -507,14 +523,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu12" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					Pravila kontnog plana
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu12">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu12">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -537,14 +553,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu06" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					Računovodstvo
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu06">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu06">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -567,14 +583,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu02" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					Rekonsilijacija
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu02">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu02">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -597,14 +613,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu09" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					Riznica - Middle Office
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu09">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu09">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -627,14 +643,14 @@
 
 			</li>
 
-			<li class="main-menu-item has-submenu @@main-menu-active-state">
+			<li class="main-menu-item has-submenu ">
 				<a href="#collapseSubMenu14" class="transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 					SME
 					<span class="submenu-arrow transition">
 						<i class="fa fa-angle-right"></i>
 					</span>
 				</a>
-				<ul class="submenu list-unstyled collapse @@collapse-submenu-state" id="collapseSubMenu14">
+				<ul class="submenu list-unstyled collapse " id="collapseSubMenu14">
 					<li class="submenu-item active">
 						<a href="/" class="transition">Generic - Org za BU</a>
 					</li>
@@ -758,7 +774,9 @@
 						</a>
 						<img src="http://placehold.it/30x30" class="profile-image" alt="Mario Mrljić">
 						<ul class="dropdown-menu">
-							<li><a href="#">Something else here</a></li>
+							<li class="dropdown-header">Administracija</li>
+							<li><a href="/admin.html">Nova grupa</a></li>
+							<li><a href="/reports.html">Izvješća</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="#">Separated link</a></li>
 							<li><a href="#">Logout</a></li>
@@ -897,6 +915,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="assets/js/vendors/jquery.min.js"><\/script>')</script>
 	<script src="assets/js/vendors/bootstrap.min.js"></script>
+	<script src="assets/js/vendors/jquery.nestable.js"></script>
 	<script src="assets/js/app.js"></script>
 
 </body>
