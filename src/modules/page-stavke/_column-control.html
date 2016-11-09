@@ -1,40 +1,51 @@
-<div class="column-control section-bg row">
-	<div class="col-sm-6">
-		<h4>Kolone</h4>
+<div class="column-control row">
+	<div class="col-sm-12">
+		<div class="panel panel-default">
+			<div class="panel-heading panel-columns">
+				<div class="col-sm-6">
+					<h3 class="panel-title">Kolone</h3>
+				</div>
+				<!-- /.col-sm-6 -->
+				<div class="form-group form-group-select text-right col-sm-6">
+					<label for="row-level">Odaberite dubinu nivoa za prikaz:</label>
+					<select class="form-control input-sm" id="column-level">
+						<option selected>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+				<!-- /.col-sm-6 -->
+			</div>
+			<!-- /.panel-heading -->
+			<div class="panel-body">
+				<div class="column-control-table table-responsive">
+					<table class="table table-hover table-condensed">
+						<thead>
+							<tr>
+								<th>Šifra</th>
+								<th>Naziv (HR)</th>
+								<th>Naziv (EN)</th>
+								<th>Izvor podataka</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="table-no-data">
+								<td colspan="4">
+									<i class="icon fa fa-warning"></i> 
+									Nema podataka
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- /.column-control-table -->
+			</div>
+			<!-- /.panel-body -->
+		</div>
+		<!-- .panel -->
 	</div>
-	<!-- /.col-sm-6 -->
-	<div class="form-group form-group-select text-right col-sm-6">
-		<label for="row-level">Odaberite dubinu nivoa za prikaz:</label>
-		<select class="form-control input-sm" id="row-level">
-			<option selected>1</option>
-			<option>2</option>
-			<option>3</option>
-			<option>4</option>
-			<option>5</option>
-		</select>
-	</div>
-	<!-- /.col-sm-6 -->
-
-	<div class="column-control-table table-responsive col-sm-12">
-		<table class="table table-condensed">
-			<thead>
-				<tr>
-					<th>Šifra</th>
-					<th>Naziv (HR)</th>
-					<th>Naziv (EN)</th>
-					<th>Izvor podataka</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td colspan="4">
-						<i class="fa fa-warning"></i> 
-						Nema podataka
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<!-- /.column-control-table -->
+	<!-- /.col-sm-12 -->
 </div>
 <!-- /.column-control -->

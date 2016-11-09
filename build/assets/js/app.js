@@ -12,7 +12,13 @@ $('#theme-light').click(function() {
 $('.navbar-toggle').click(function() {
 	$(this).toggleClass('hidden');
 	$(this).siblings('.navbar-toggle').toggleClass('hidden');
+	// Toggle main menu
 	$('body').toggleClass('main-menu-closed');
+});
+// Toggle .hidden sidebar button
+$('.btn-notifications').click(function(event) {
+	$('body').toggleClass('notifications-closed');
+	event.preventDefault();
 });
 
 // Search

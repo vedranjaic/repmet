@@ -1,0 +1,16 @@
+// Notifications
+.notifications {
+	position: fixed;
+	top: 70px;
+	right: 0;
+	background-color: $grey-light-1;
+	width: 280px;
+	height: calc(100% + 60px);
+	padding: 30px;
+	backface-visibility: hidden;
+	will-change: transform;
+	transform: translateX(0px);
+	.notifications-closed & {
+		transform: translateX(100%);
+	}
+}

@@ -10,6 +10,23 @@
 
 // Row control
 .row-control {
+	.row-control-table {
+		// Table row levels
+		.table-row-l1 {
+			td {
+				&:first-child {
+					padding-left: 20px;
+				}
+			}
+		}
+		.table-row-l2 {
+			td {
+				&:first-child {
+					padding-left: 40px;
+				}
+			}
+		}
+	}
 	table {
 		thead {
 			th {

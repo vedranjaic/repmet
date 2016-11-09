@@ -58,6 +58,11 @@
 					&:hover {
 						background-color: $grey-dark;
 					}
+					&.table-no-data {
+						&:hover {
+							background-color: transparent;
+						}
+					}
 				}
 			}
 		}
@@ -133,6 +138,11 @@
 				tr {
 					&:hover {
 						background-color: lighten($grey-light-2, 3%);
+					}
+					&.table-no-data {
+						&:hover {
+							background-color: transparent;
+						}
 					}
 				}
 			}

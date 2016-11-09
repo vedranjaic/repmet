@@ -163,8 +163,19 @@
 	float: left;
 	margin-right: 50px;
 	position: relative;
-	.profile-notifications {
-		padding-right: 23px;
+	.btn-notifications {
+		padding: 0 23px;
+		line-height: 70px;
+		color: $grey-medium-2;
+		display: inline-block;
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			color: $grey-dark;
+		}
+		.fa {
+			line-height: inherit;
+		}
 		.badge {
 			background-color: $pbz-red;
 			font-size: 10px;
