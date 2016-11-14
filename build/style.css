@@ -8274,6 +8274,8 @@ body {
   width: 300px;
   max-height: 51px;
   bottom: 0;
+}
+.main-menu .branding-info .master-brand {
   padding: 13px 20px;
 }
 .main-menu .branding-info .master-brand-logo {
@@ -8331,6 +8333,10 @@ body {
 }
 
 .admin-toolbar {
+  transition: all 300ms;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   position: fixed;
   bottom: 0;
   left: 300px;
@@ -8338,6 +8344,9 @@ body {
   background-color: #2a2d35;
   min-height: 51px;
   padding: 10px 50px;
+}
+.main-menu-closed .admin-toolbar {
+  left: 0;
 }
 
 

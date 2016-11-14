@@ -21,6 +21,7 @@
 
 // Admin toolbar
 .admin-toolbar {
+	@include transition;
 	position: fixed;
 	bottom: 0;
 	left: 300px;
@@ -28,4 +29,7 @@
 	background-color: $grey-dark;
 	min-height: 51px;
 	padding: 10px 50px;
+	.main-menu-closed & {
+		left: 0;
+	}
 }
