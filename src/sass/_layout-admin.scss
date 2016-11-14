@@ -1,15 +1,31 @@
 // Admin
 .administration {
 	.content {
-		
+		padding-bottom: 90px;
 	}
 }
+
+// EDIT REPORTS
+// Versions
+.table-edit-reports-version {
+	.icon {
+		font-size: 1.2em;
+	}
+	.version-status {
+		color: $grey-light-2;
+	}
+	.version-active {
+		color: darken($func-green, 10%);
+	}
+}
+
+// Admin toolbar
 .admin-toolbar {
 	position: fixed;
 	bottom: 0;
 	left: 300px;
 	right: 0;
 	background-color: $grey-dark;
-	min-height: 55px;
+	min-height: 51px;
 	padding: 10px 50px;
 }

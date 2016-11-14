@@ -45,6 +45,21 @@ $('.submenu-item a').click(function() {
 });
 
 
+//
+// --- [ PRESENTATION ] --- //
+//
+// Table click row shows hidden rows
+$('.table-row-l0').click(function() {
+	$(this).siblings('.table-row-l1').toggleClass('hidden');
+});
+$('.table-row-l1').click(function() {
+	$(this).siblings('.table-row-l2').toggleClass('hidden');
+});
+$('.table-row-l2').click(function() {
+	window.location.href = 'rules.html';
+});
+
+
 // --- [ NESTABLE ]
 // Serialize
 var updateOutput = function(e)
@@ -78,19 +93,4 @@ $('#nestable-menu').on('click', function(e)
     if (action === 'collapse-all') {
         $('.dd').nestable('collapseAll');
     }
-});
-
-
-//
-// --- [ PRESENTATION ] --- //
-//
-// Table click row shows hidden rows
-$('.table-row-l0').click(function() {
-	$(this).siblings('.table-row-l1').toggleClass('hidden');
-});
-$('.table-row-l1').click(function() {
-	$(this).siblings('.table-row-l2').toggleClass('hidden');
-});
-$('.table-row-l2').click(function() {
-	window.location.href = '/rules.html';
 });

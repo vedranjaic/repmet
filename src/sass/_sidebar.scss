@@ -5,7 +5,6 @@
 	top: 70px;
 	height: 100%;
 	margin-bottom: -70px;
-	background-color: $grey-dark;
 	padding-top: 20px;
 	overflow-y: auto;
 	& > ul {
@@ -14,62 +13,47 @@
 	}
 	a {
 		display: block;
-		color: $grey-medium-2;
 		padding: 4px 20px 4px 15px;
 		border-left: 5px solid transparent;
 		white-space: nowrap;
 		&:hover,
 		&:focus {
 			text-decoration: none;
-			background-color: lighten($grey-dark, 2%);
 		}
 	}
-	&-header {
-		color: $grey-light-2;
+	// Main menu header
+	.main-menu-header {
 		text-transform: uppercase;
 		font-size: 10px;
 		padding-left: 20px;
 		padding-right: 15px;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 	}
-	&-sort {
-		color: $grey-light-2;
+	// Main menu sort
+	.main-menu-sort {
 		text-transform: uppercase;
 		font-size: 10px;
 		select {
-			color: $grey-medium-2 !important;
 			text-transform: uppercase;
 			font-size: 10px;
 			padding: 0;
 			height: 17px !important;
 			line-height: 10px !important;
-			margin-top: -3px;
+			margin-top: -2px;
 			background-color: transparent !important;
 		}
 	}
-	&-item {
+	// Main menu item
+	.main-menu-item {
 		&.active {
 			& > a {
-				color: $grey-medium-1;
-				background-color: lighten($grey-dark, 2%);
-				border-left: 5px solid $pbz-red;
 				padding-left: 15px;
 				& + .submenu {
-					a {
-						color: $grey-medium-1;
-					}
 					.submenu-item {
 						a {
 							&:hover,
 							&:focus {
-								border-left: 5px solid darken($pbz-red, 20%);
 								padding-left: 25px;
-							}
-						}
-						&.active {
-							a {
-								background-color: lighten($grey-dark, 2%);
-								border-left: 5px solid darken($pbz-red, 20%);
 							}
 						}
 					}
@@ -104,13 +88,12 @@
 	.branding-info {
 		position: fixed;
 		width: 300px;
+		max-height: 51px;
 		bottom: 0;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		background-color: darken($grey-dark, 2%);
-		.master-brand {
-			width: 120px;
-			opacity: 0.2;
+		padding: 13px 20px;
+		.master-brand-logo {
+			max-width: 80px;
+			opacity: 0.4;
 		}
 		.main-menu-closed & {
 			width: 0;

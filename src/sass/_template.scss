@@ -11,6 +11,7 @@ body {
 // Forms
 .form-control {
 	// Theme
+	box-shadow: none;
 	&:focus {
 		box-shadow: none;
 	}
@@ -39,6 +40,15 @@ body {
 			color: $white;
 		}
 	}
+}
+
+// Dropdowns
+.dropdown-header {
+	text-transform: uppercase;
+	font-size: 10px;
+	color: $grey-medium-1;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 // Checkboxes

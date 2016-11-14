@@ -19,7 +19,7 @@
 					<div class="panel-heading panel-tabs">
 						<ul class="nav nav-tabs" role="tablist">
 							<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Općeniti podaci</a></li>
-							<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Verzija</a></li>
+							<li role="presentation"><a href="#edit-reports-version" aria-controls="edit-reports-version" role="tab" data-toggle="tab">Verzija</a></li>
 							<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Definiranje</a></li>
 							<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Uloge</a></li>
 						</ul>
@@ -28,7 +28,9 @@
 					<div class="panel-body">
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane active" id="home">1</div>
-							<div role="tabpanel" class="tab-pane" id="profile">2</div>
+							<div role="tabpanel" class="tab-pane" id="edit-reports-version">
+								@@include('modules/page-admin-edit-reports/_edit-reports-version.html')
+							</div>
 							<div role="tabpanel" class="tab-pane" id="messages">3</div>
 							<div role="tabpanel" class="tab-pane" id="settings">4</div>
 						</div>
