@@ -7399,11 +7399,9 @@ button.close {
 .theme-light .main-menu {
   background-color: #d0d0d0;
 }
-.theme-light .main-menu a {
+.theme-light .main-menu .main-menu-link,
+.theme-light .main-menu .submenu-link {
   color: #767f88;
-}
-.theme-light .main-menu a:hover, .theme-light .main-menu a:focus {
-  background-color: #c3c3c3;
 }
 .theme-light .main-menu .main-menu-header {
   color: #ffffff;
@@ -7414,22 +7412,27 @@ button.close {
 .theme-light .main-menu .main-menu-sort select {
   color: #848c94 !important;
 }
-.theme-light .main-menu .main-menu-item.active > a {
+.theme-light .main-menu .main-menu-item:hover .main-menu-link,
+.theme-light .main-menu .main-menu-item:hover .active .submenu-link, .theme-light .main-menu .main-menu-item:focus .main-menu-link,
+.theme-light .main-menu .main-menu-item:focus .active .submenu-link {
+  background-color: #c3c3c3;
+}
+.theme-light .main-menu .main-menu-item.active > .main-menu-link {
   color: #767f88;
   background-color: #c3c3c3;
   border-left: 5px solid #f37021;
 }
-.theme-light .main-menu .main-menu-item.active > a + .submenu {
+.theme-light .main-menu .main-menu-item.active > .main-menu-link + .submenu {
   background-color: #dddddd;
 }
-.theme-light .main-menu .main-menu-item.active > a + .submenu a {
+.theme-light .main-menu .main-menu-item.active > .main-menu-link + .submenu .submenu-link {
   color: #767f88;
 }
-.theme-light .main-menu .main-menu-item.active > a + .submenu .submenu-item a:hover, .theme-light .main-menu .main-menu-item.active > a + .submenu .submenu-item a:focus {
+.theme-light .main-menu .main-menu-item.active > .main-menu-link + .submenu .submenu-item .submenu-link:hover, .theme-light .main-menu .main-menu-item.active > .main-menu-link + .submenu .submenu-item .submenu-link:focus {
   background-color: #cdcdcd;
   border-left: 5px solid #f68f51;
 }
-.theme-light .main-menu .main-menu-item.active > a + .submenu .submenu-item.active a {
+.theme-light .main-menu .main-menu-item.active > .main-menu-link + .submenu .submenu-item.active .submenu-link {
   background-color: #cdcdcd;
   border-left: 5px solid #f68f51;
 }
@@ -7469,7 +7472,7 @@ button.close {
   background-color: transparent;
 }
 .theme-light .table-edit-reports-version .table .version-current {
-  background-color: #d8d8d8;
+  background-color: #f0f0f0;
 }
 .theme-light .panel.panel-default > .panel-heading {
   background-color: rgba(42, 45, 53, 0.1);
@@ -7642,6 +7645,12 @@ body {
 }
 .table thead th {
   font-family: "DINRounded-Bold";
+}
+.table.table-hover tbody tr {
+  transition: all 300ms;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .table.table-hover tbody tr:hover {
   cursor: pointer;
@@ -8215,13 +8224,16 @@ body {
 .main-menu > ul {
   padding-bottom: 125px;
 }
-.main-menu a {
+.main-menu .main-menu-link,
+.main-menu .submenu-link {
   display: block;
   padding: 4px 20px 4px 15px;
   border-left: 5px solid transparent;
   white-space: nowrap;
 }
-.main-menu a:hover, .main-menu a:focus {
+.main-menu .main-menu-link:hover, .main-menu .main-menu-link:focus,
+.main-menu .submenu-link:hover,
+.main-menu .submenu-link:focus {
   text-decoration: none;
 }
 .main-menu .main-menu-header {
@@ -8244,15 +8256,41 @@ body {
   margin-top: -2px;
   background-color: transparent !important;
 }
-.main-menu .main-menu-item.active > a {
+.main-menu .main-menu-item {
+  position: relative;
+}
+.main-menu .main-menu-item:hover .btn-edit-group, .main-menu .main-menu-item:focus .btn-edit-group {
+  opacity: 1;
+}
+.main-menu .main-menu-item.active > .main-menu-link {
   padding-left: 15px;
 }
-.main-menu .main-menu-item.active > a + .submenu .submenu-item a:hover, .main-menu .main-menu-item.active > a + .submenu .submenu-item a:focus {
+.main-menu .main-menu-item.active > .main-menu-link + .submenu .submenu-item .submenu-link:hover, .main-menu .main-menu-item.active > .main-menu-link + .submenu .submenu-item .submenu-link:focus {
   padding-left: 25px;
 }
-.main-menu .main-menu-item .submenu-item a {
+.main-menu .main-menu-item .submenu-item .submenu-link {
   padding-left: 25px;
   border-left: 5px solid transparent;
+}
+.main-menu .btn-edit-group {
+  transition: all 300ms;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 27px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #767f88;
+  opacity: 0;
+}
+.main-menu .btn-edit-group:hover, .main-menu .btn-edit-group:focus {
+  color: #2a2d35;
 }
 .main-menu .has-submenu {
   position: relative;

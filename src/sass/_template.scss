@@ -182,6 +182,7 @@ body {
 	&.table-hover {
 		tbody {
 			tr {
+				@include transition;
 				&:hover {
 					cursor: pointer;
 				}

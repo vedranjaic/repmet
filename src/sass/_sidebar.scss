@@ -11,7 +11,8 @@
 		// Negative margin + .branding-info
 		padding-bottom: 125px;
 	}
-	a {
+	.main-menu-link,
+	.submenu-link {
 		display: block;
 		padding: 4px 20px 4px 15px;
 		border-left: 5px solid transparent;
@@ -45,12 +46,20 @@
 	}
 	// Main menu item
 	.main-menu-item {
+		position: relative;
+		&:hover,
+		&:focus {
+			// Show edit button
+			.btn-edit-group {
+				opacity: 1;
+			}
+		}
 		&.active {
-			& > a {
+			& > .main-menu-link {
 				padding-left: 15px;
 				& + .submenu {
 					.submenu-item {
-						a {
+						.submenu-link {
 							&:hover,
 							&:focus {
 								padding-left: 25px;
@@ -61,12 +70,32 @@
 			}
 		}
 		.submenu-item {
-			a {
+			.submenu-link {
 				padding-left: 25px;
 				border-left: 5px solid transparent;
 			}
 		}
 	}
+	// Edit button
+	.btn-edit-group {
+		@include transition;
+		position: absolute;
+		top: 0;
+		right: 30px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 10px;
+		line-height: 27px;
+		padding-left: 10px;
+		padding-right: 10px;
+		color: $grey-medium-3;
+		opacity: 0;
+		&:hover,
+		&:focus {
+			color: $grey-dark;
+		}
+	}
+	// Has submenu
 	.has-submenu {
 		position: relative;
 		.submenu-arrow {
@@ -80,6 +109,7 @@
 			}
 		}
 	}
+	// Main menu closed
 	.main-menu-closed & {
 		width: 0;
 		overflow: hidden;
