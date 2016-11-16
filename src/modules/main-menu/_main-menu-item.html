@@ -1,11 +1,20 @@
 <li class="main-menu-item has-submenu @@main-menu-active-state">
-	<a href="edit-group.html" class="btn-edit-group">
-		<i class="icon fa fa-pencil"></i> Uredi
-	</a>
+	<div class="dropdown dropdown-group-settings">
+		<a href="#dropdown-group-settings" class="btn-group-settings dropdown-toggle" data-toggle="dropdown">
+			<i class="icon fa fa-cog"></i>
+		</a>
+		<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
+			<li><a href="edit-group.html">Uredi grupu</a></li>
+			<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+			<li role="separator" class="divider"></li>
+			<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
+		</ul>
+	</div>
+	<!-- /.dropdown -->
 	<a href="#@@main-menu-collapseID" class="main-menu-link transition" data-toggle="collapse" data-parent="#main-menu-accordion">
 		@@main-menu-item
 		<span class="submenu-arrow transition">
-			<i class="fa fa-angle-right"></i>
+			<i class="collapser fa fa-angle-down"></i>
 		</span>
 	</a>
 	@@include('_main-menu-submenu-item.html', {"collapse-submenu-state": "@@collapse-submenu-state", "main-submenu-collapseID": "@@main-menu-collapseID"})

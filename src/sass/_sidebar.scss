@@ -50,7 +50,7 @@
 		&:hover,
 		&:focus {
 			// Show edit button
-			.btn-edit-group {
+			.dropdown-group-settings {
 				opacity: 1;
 			}
 		}
@@ -71,28 +71,55 @@
 		}
 		.submenu-item {
 			.submenu-link {
+				vertical-align: bottom;
 				padding-left: 25px;
 				border-left: 5px solid transparent;
+				&:hover {
+					.report-version {
+						opacity: 1;
+					}
+				}
+			}
+			.report-version {
+				@include transition;
+				float: right;
+				font-size: 12px;
+				vertical-align: bottom;
+				opacity: 0;
 			}
 		}
 	}
 	// Edit button
-	.btn-edit-group {
+	.dropdown-group-settings {
 		@include transition;
 		position: absolute;
 		top: 0;
-		right: 30px;
-		text-transform: uppercase;
-		text-decoration: none;
-		font-size: 10px;
-		line-height: 27px;
-		padding-left: 10px;
-		padding-right: 10px;
-		color: $grey-medium-3;
+		right: 45px;
 		opacity: 0;
-		&:hover,
-		&:focus {
-			color: $grey-dark;
+		&.open {
+			opacity: 1;
+		}
+		.btn-group-settings {
+			text-decoration: none;
+			font-size: 10px;
+			line-height: 27px;
+			padding: 7px 10px;
+			color: $grey-medium-3;
+			&:hover,
+			&:focus {
+				color: $grey-dark;
+			}
+		}
+		.dropdown-menu {
+			margin-top: 0;
+			border: 0;
+			border-radius: 0;
+			a {
+				color: $grey-medium-3;
+			}
+			.divider {
+				margin: 5px 0;
+			}
 		}
 	}
 	// Has submenu
@@ -105,7 +132,77 @@
 		}
 		&.active {
 			.submenu-arrow {
-				transform: rotate(90deg);
+				transform: rotate(-180deg);
+			}
+		}
+	}
+	.edit-mode {
+		background-color: $grey-medium-3 !important;
+		color: $white !important;
+		&:after {
+			// content: '|';
+		}
+	}
+	// Report settings
+	.report-settings {
+		background-color: $grey-medium-3;
+		border-left: 5px solid transparent;
+		// padding-left: 30px;
+		table {
+			tr {
+				td {
+					text-transform: uppercase;
+					font-size: 11px;
+					color: $white;
+					border-bottom: 0;
+					// padding-left: 0;
+					// padding-right: 0;
+					&:first-child {
+						padding-left: 25px;
+					}
+					a {
+						@include transition;
+						color: $white;
+						&:hover {
+							text-decoration: none;
+							color: $grey-light-2;
+						}
+					}
+				}
+			}
+			tbody {
+				& + tbody {
+					border-top: 0;
+				}
+			}
+			.report-settings-actions {
+				tr {
+					td {
+						padding-top: 10px;
+						padding-bottom: 10px;
+						background-color: darken($grey-medium-3, 15%);
+					}
+				}
+				.report-settings-status {
+					.icon {
+						margin-top: 1px;
+						margin-right: 13px;
+					}
+					&.status-active {
+						.icon {
+							color: $func-green;
+						}
+					}
+				}
+			}
+			.table-head {
+				tr {
+					td {
+						background-color: lighten($grey-medium-3, 5%);
+						padding-top: 3px;
+						padding-bottom: 3px;
+					}
+				}
 			}
 		}
 	}
@@ -118,7 +215,7 @@
 	.branding-info {
 		position: fixed;
 		width: 300px;
-		max-height: 51px;
+		max-height: 53px;
 		bottom: 0;
 		.master-brand {
 			padding: 13px 20px;

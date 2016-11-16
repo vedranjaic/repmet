@@ -30,13 +30,38 @@ body {
 		display: none;
 	}
 	&-default {
+		background-color: $grey-medium-2;
+		border-color: $grey-medium-2;
+		color: $white;
+		text-transform: uppercase;
+		&:hover,
+		&:focus {
+			background-color: darken($grey-medium-2, 5%);
+			border-color: darken($grey-medium-2, 5%);
+			color: $white;
+		}
+	}
+	&-primary {
 		background-color: $pbz-red;
-		border: 0;
+		border-color: $pbz-red;
 		color: $white;
 		text-transform: uppercase;
 		&:hover,
 		&:focus {
 			background-color: darken($pbz-red, 5%);
+			border-color: darken($pbz-red, 5%);
+			color: $white;
+		}
+	}
+	&-success {
+		background-color: $func-green;
+		border-color: $func-green;
+		color: $white;
+		text-transform: uppercase;
+		&:hover,
+		&:focus {
+			background-color: darken($func-green, 5%);
+			border-color: darken($func-green, 5%);
 			color: $white;
 		}
 	}
@@ -124,29 +149,26 @@ body {
 
 // Heading titles
 .page-heading {
+	position: relative;
 	padding-bottom: 30px;
-	&:before {
-		font-family: 'FontAwesome';
-		color: $pbz-orange;
-		opacity: 0.8;
-		display: inline-block;
+	&-group {
+		.icon {
+			font-size: 2em;
+		}
+	}
+	&-report {
+		.icon {
+			font-size: 3.5em;
+			margin-right: 15px;
+		}
+	}
+	.icon {
 		float: left;
-		font-size: 4em;
-		margin-right: 20px;
-	}
-	&.page-type-stavka {
-		&:before {
-			content: '\f233';
-		}
-	}
-	&.page-type-pravila {
-		&:before {
-			content: '\f0db';
-		}
+		color: $pbz-orange;
 	}
 	.page-title {
-		padding-top: 12px;
 		padding-bottom: 25px;
+		padding-left: 40px;
 		position: relative;
 		small {
 			color: $grey-medium-2;
@@ -156,12 +178,23 @@ body {
 		.page-type {
 			position: absolute;
 			right: 0;
-			top: 10px;
-			font-size: 2em;
+			top: 0;
+			font-size: 1.1em;
 			text-transform: uppercase;
 			font-family: $font-cond-bold;
 			opacity: 0.07;
 		}
+		.page-version {
+			position: absolute;
+			right: 0;
+			font-size: 12px;
+			top: 36px;
+		}
+	}
+	.btn-heading {
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 }
 
@@ -205,8 +238,8 @@ body {
 	&.panel-default {
 		// Panel heading
 		& > .panel-heading {
-			padding-top: 15px;
-			padding-bottom: 15px;
+				padding-top: 15px;
+				padding-bottom: 15px;
 			.panel-title {
 				font-size: 21px;
 			}
@@ -243,7 +276,6 @@ body {
 				}
 			}
 		}
-		
 	}
 }
 

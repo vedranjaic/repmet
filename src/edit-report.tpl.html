@@ -1,0 +1,67 @@
+@@include('modules/_header.html')
+
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+	@@include('modules/_sidebar.html')
+	@@include('modules/_toolbar.html')
+
+	<section class="content transition">
+		
+		<!-- PAGE HEADING -->
+		@@include('modules/template/_page-heading.html', {
+			"page-icon": "pencil", 
+			"page-heading-title": "Uredi izvještaj", 
+			"page-heading-category": "GRUPA: ALM", 
+			"page-heading-type": "Stavke",
+			"page-heading-version": "1.0.1"
+		})
+		
+		<!-- REPORTS -->
+		<div class="edit-report row">
+			<div class="col-sm-12">
+				<div class="panel panel-default">
+					<div class="panel-heading panel-tabs">
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Općeniti podaci</a></li>
+							<li role="presentation"><a href="#edit-reports-version" aria-controls="edit-reports-version" role="tab" data-toggle="tab">Verzija</a></li>
+							<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Definiranje</a></li>
+							<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Uloge</a></li>
+						</ul>
+					</div>
+					<!-- /.panel-heading -->
+					<div class="panel-body">
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="home">
+								@@include('modules/page-edit-report/_edit-reports-basic-data.html')
+							</div>
+							<div role="tabpanel" class="tab-pane" id="edit-reports-version">
+								@@include('modules/page-edit-report/_edit-reports-version.html')
+							</div>
+							<div role="tabpanel" class="tab-pane" id="messages">3</div>
+							<div role="tabpanel" class="tab-pane" id="settings">
+								@@include('modules/page-edit-report/_edit-reports-roles.html')
+							</div>
+						</div>
+					</div>
+					<!-- /.panel-body -->
+				</div>
+				<!-- /.panel -->
+			</div>
+			<!-- /.col-sm-12 -->
+		</div>
+		<!-- /.edit-report -->
+
+		<div class="admin-toolbar">
+			<button type="submit" class="btn btn-primary pull-right">Spremi</button>
+		</div>
+		<!-- /.admin-toolbar -->
+
+	</section>
+	<!-- /.content -->
+
+	@@include('modules/_notifications.html')
+
+
+@@include('modules/_footer.html')

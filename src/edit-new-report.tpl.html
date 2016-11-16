@@ -10,10 +10,16 @@
 	<section class="content transition">
 		
 		<!-- PAGE HEADING -->
-		@@include('modules/template/_page-heading.html', {"page-icon": "stavka", "page-heading-title": "Izvješća", "page-heading-category": "DWH Proizvodi", "page-heading-type": "Stavke"})
+		@@include('modules/template/_page-heading.html', {
+			"page-icon": "pencil", 
+			"page-heading-title": "Novi izvještaj", 
+			"page-heading-category": "GRUPA: ALM", 
+			"page-heading-type": "Stavke",
+			"page-heading-version": "1.0.0"
+		})
 		
 		<!-- REPORTS -->
-		<div class="edit-reports row">
+		<div class="edit-new-report row">
 			<div class="col-sm-12">
 				<div class="panel panel-default">
 					<div class="panel-heading panel-tabs">
@@ -27,12 +33,16 @@
 					<!-- /.panel-heading -->
 					<div class="panel-body">
 						<div class="tab-content">
-							<div role="tabpanel" class="tab-pane active" id="home">1</div>
+							<div role="tabpanel" class="tab-pane active" id="home">
+								@@include('modules/page-edit-new-report/_edit-reports-basic-data.html')
+							</div>
 							<div role="tabpanel" class="tab-pane" id="edit-reports-version">
-								@@include('modules/page-admin-edit-reports/_edit-reports-version.html')
+								@@include('modules/page-edit-new-report/_edit-reports-version.html')
 							</div>
 							<div role="tabpanel" class="tab-pane" id="messages">3</div>
-							<div role="tabpanel" class="tab-pane" id="settings">4</div>
+							<div role="tabpanel" class="tab-pane" id="settings">
+								@@include('modules/page-edit-new-report/_edit-reports-roles.html')
+							</div>
 						</div>
 					</div>
 					<!-- /.panel-body -->
@@ -41,7 +51,12 @@
 			</div>
 			<!-- /.col-sm-12 -->
 		</div>
-		<!-- /.edit-reports -->
+		<!-- /.edit-new-report -->
+
+		<div class="admin-toolbar">
+			<button type="submit" class="btn btn-primary pull-right">Spremi</button>
+		</div>
+		<!-- /.admin-toolbar -->
 
 	</section>
 	<!-- /.content -->

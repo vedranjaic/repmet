@@ -10,10 +10,13 @@
 	<section class="content transition">
 		
 		<!-- PAGE HEADING -->
-		@@include('modules/template/_page-heading.html', {"page-icon": "stavka", "page-heading-title": "Uređivanje grupe", "page-heading-category": "DWH Proizvodi", "page-heading-type": "Stavke"})
+		@@include('modules/template/_page-heading-group.html', {
+			"page-icon": "folder", 
+			"page-heading-title": "Uređivanje grupe"
+		})
 		
 		<!-- GRUPE -->
-		<div class="edit-new-group row">
+		<div class="edit-group row">
 			<div class="col-sm-12">
 				<div class="panel panel-default">
 					<div class="panel-heading panel-columns">
@@ -118,10 +121,10 @@
 			</div>
 			<!-- /.col-sm-12 -->
 		</div>
-		<!-- /.edit-new-group -->
+		<!-- /.edit-group -->
 
 		<div class="admin-toolbar">
-			<button type="submit" class="btn btn-default pull-right">Spremi</button>
+			<button type="submit" class="btn btn-primary pull-right">Spremi</button>
 		</div>
 		<!-- /.admin-toolbar -->
 

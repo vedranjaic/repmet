@@ -1,11 +1,24 @@
-// --- [ THEME SWITCHER ]
-$('#theme-dark').click(function() {
-	$('body').removeClass('theme-light').addClass('theme-dark');
+// --- [ ROLE SWITCH ]
+$('#btn-role-administrator').click(function() {
+	$('body').removeClass('role-user');
+	$('body').addClass('role-administrator');
 });
-$('#theme-light').click(function() {
-	$('body').removeClass('theme-dark').addClass('theme-light');
+$('#btn-role-user').click(function() {
+	$('body').removeClass('role-administrator');
+	$('body').addClass('role-user');
 });
 
+// Hide report status if not on report page
+$(document).ready(function () {
+    if (!(window.location.href.indexOf("index") > -1)) {
+       $('.report-settings').addClass('hidden');
+    }
+});
+$(document).ready(function () {
+    if (window.location.href.indexOf("edit-group") > -1) {
+       $('.active .main-menu-link').addClass('edit-mode');
+    }
+});
 
 // --- [ TOOLBAR ]
 // Toggle .hidden sidebar button

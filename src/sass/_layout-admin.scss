@@ -6,16 +6,36 @@
 }
 
 // EDIT REPORTS
+// Basic data
+.form-edit-basic-data {
+	padding-top: 8px;
+}
 // Versions
-.table-edit-reports-version {
+.table-edit-report-version {
 	.icon {
 		font-size: 1.2em;
 	}
 	.version-status {
 		color: $grey-light-2;
+		vertical-align: middle;
 	}
 	.version-active {
 		color: darken($func-green, 10%);
+	}
+	.version-current {
+		td {
+			background-color: $grey-light-1;
+		}
+	}
+}
+// Roles
+.form-edit-roles {
+	padding-top: 8px;
+	.label-add-user {
+		visibility: hidden;
+	}
+	.btn-add-user {
+		display: block;
 	}
 }
 
