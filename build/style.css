@@ -8116,13 +8116,13 @@ body {
   color: #ffffff !important;
 }
 .main-menu .report-settings {
-  background-color: #767f88;
+  background-color: #cdcdcd;
   border-left: 5px solid transparent;
 }
 .main-menu .report-settings table tr td {
   text-transform: uppercase;
   font-size: 11px;
-  color: #ffffff;
+  color: #767f88;
   border-bottom: 0;
 }
 .main-menu .report-settings table tr td:first-child {
@@ -8145,7 +8145,8 @@ body {
 .main-menu .report-settings table .report-settings-actions tr td {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #52595f;
+  background-color: #767f88;
+  color: #ffffff;
 }
 .main-menu .report-settings table .report-settings-actions .report-settings-status .icon {
   margin-top: 1px;
@@ -8155,7 +8156,8 @@ body {
   color: #8dc63f;
 }
 .main-menu .report-settings table .table-head tr td {
-  background-color: #848c94;
+  background-color: #c3c3c3;
+  color: #ffffff;
   padding-top: 3px;
   padding-bottom: 3px;
 }
