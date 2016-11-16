@@ -82,6 +82,13 @@
 					}
 				}
 			}
+			&.disabled {
+				& > .main-menu-link {
+					color: $grey-medium-2;
+					background-color: darken($grey-light-2, 5%);
+					border-left: 5px solid $pbz-red;
+				}
+			}
 		}
 		// Branding info
 		.branding-info {
