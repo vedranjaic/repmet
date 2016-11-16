@@ -8090,6 +8090,7 @@ body {
   line-height: 27px;
   padding: 7px 10px;
   color: #767f88;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .main-menu .dropdown-group-settings .btn-group-settings:hover, .main-menu .dropdown-group-settings .btn-group-settings:focus {
   color: #2a2d35;
