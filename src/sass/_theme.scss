@@ -84,9 +84,12 @@
 			}
 			&.disabled {
 				& > .main-menu-link {
-					color: $grey-medium-2;
-					background-color: darken($grey-light-2, 5%);
-					border-left: 5px solid $pbz-red;
+					color: darken($grey-medium-1, 10%);
+				}
+				&.active {
+					& > .main-menu-link {
+						border-left: 5px solid darken($grey-medium-1, 10%);
+					}
 				}
 			}
 		}

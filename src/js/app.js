@@ -52,7 +52,7 @@ $('.main-menu-item > a').click(function() {
 	$(this).siblings('.submenu').collapse('toggle');
 	$(this).parent('li').toggleClass('active');
 });
-$('.submenu-item a').click(function() {
+$('.submenu-item > a').click(function() {
 	$('.submenu-item').removeClass('active');
 	$(this).parent('.submenu-item').addClass('active');
 });

@@ -1,5 +1,23 @@
 // Admin
-.administration {
+.role-administrator {
+	// Main menu
+	.main-menu {
+		// Menu header
+		.main-menu-admin-new {
+			display: block;
+		}
+		// Menu items
+		.has-submenu {
+			.submenu-arrow {
+				right: 40px;
+			}
+		}
+		// Menu submenu items
+		.submenu-link {
+			padding-right: 30px;
+		}
+	}
+	// Content
 	.content {
 		padding-bottom: 90px;
 	}
@@ -44,7 +62,7 @@
 	@include transition;
 	position: fixed;
 	bottom: 0;
-	left: 300px;
+	left: 330px;
 	right: 0;
 	background-color: $grey-dark;
 	min-height: 51px;

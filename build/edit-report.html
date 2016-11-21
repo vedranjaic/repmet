@@ -19,7 +19,7 @@
 	<script src="assets/js/vendors/modernizr.js"></script>
 	
 </head>
-<body class="administration role-administrator theme-light notifications-closed">
+<body class="role-administrator theme-light notifications-closed">
 
 	<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -36,12 +36,19 @@
 					ABC 
 					<i class="icon fa fa-sort"></i>
 				</span>
+				<div class="main-menu-admin-new pull-right">
+					<a href="edit-new-group.html" class="btn btn-default btn-sm"><i class="icon fa fa-plus"></i> Nova grupa</a>
+				</div>
 				<div class="main-menu-sort pull-right">
 					<select class="form-control input-sm">
 						<option selected>ABC</option>
 						<option>R.br.</option>
 					</select>
 				</div>
+			</li>
+			<li class="main-menu-create-new hidden">
+				<p>Trenutno ne postoji niti jedna grupa, molimo Vas da kreirate novu.</p>
+				<a href="edit-new-group.html" class="btn btn-default btn-sm">Kreiraj novu grupu</a>
 			</li>
 			<li class="main-menu-item has-submenu active ">
 				<div class="dropdown dropdown-group-settings">
@@ -50,7 +57,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -64,63 +71,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse in" id="collapseSubMenu08">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -148,7 +108,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -162,63 +122,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu10">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -246,7 +159,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -260,63 +173,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu11">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -344,7 +210,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -358,63 +224,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu07">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -442,7 +261,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -456,63 +275,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu03">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -540,7 +312,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -554,63 +326,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu15">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -638,7 +363,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -652,63 +377,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu16">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -736,7 +414,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -750,63 +428,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu19">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -834,7 +465,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -848,63 +479,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu01">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -932,7 +516,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -946,63 +530,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu04">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -1030,7 +567,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -1044,63 +581,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu05">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -1128,7 +618,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -1142,63 +632,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu13">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -1226,7 +669,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -1240,63 +683,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu17">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -1324,7 +720,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -1338,63 +734,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu21">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -1422,7 +771,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -1436,63 +785,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu18">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -1520,7 +822,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -1534,63 +836,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu20">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -1618,7 +873,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -1632,63 +887,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu12">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -1716,7 +924,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -1730,63 +938,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu06">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -1814,7 +975,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -1828,63 +989,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu02">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -1912,7 +1026,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -1926,63 +1040,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu09">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -2010,7 +1077,7 @@
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-group-settings">
 						<li><a href="edit-group.html">Uredi grupu</a></li>
-						<li><a href="edit-new-group.html">Kreiraj novu grupu</a></li>
+						<li><a href="edit-new-group.html">Dodaj podgrupu</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="edit-new-report.html">Kreiraj novi izvještaj</a></li>
 					</ul>
@@ -2024,63 +1091,16 @@
 				</a>
 				<ul class="submenu list-unstyled collapse " id="collapseSubMenu14">
 					<li class="submenu-item active">
-						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
-						<div class="report-settings">
-							<table class="table table-condensed">
-								<tbody class="report-settings-actions">
-									<tr>
-										<td class="report-settings-edit">
-											<a href="edit-report.html"><i class="icon fa fa-pencil"></i> Uredi izvještaj</a>
-										</td>
-										<td class="report-settings-status status-active">
-											Status 
-											<i class="icon fa fa-circle pull-right"></i>
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User created
-										</td>
-										<td>
-											Date created
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											22.11.2016
-										</td>
-									</tr>
-								</tbody>
-								<tbody class="table-head">
-									<tr>
-										<td>
-											User last modified
-										</td>
-										<td>
-											Date last modified
-										</td>
-									</tr>
-								</tbody>
-								<tbody>
-									<tr>
-										<td>
-											Mario Mrljić
-										</td>
-										<td>
-											23.11.2016
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="dropdown dropdown-report-settings">
+							<a href="#dropdown-report-settings" class="btn-report-settings dropdown-toggle" data-toggle="dropdown">
+								<i class="icon fa fa-ellipsis-h"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-report-settings">
+								<li><a href="edit-report.html">Uredi izvještaj</a></li>
+							</ul>
 						</div>
-						<!-- /.report-settings -->
+						<!-- /.dropdown -->
+						<a href="index.html" class="submenu-link transition">Generic - Org za BU <span class="report-version">v 1.0.1</span></a>
 					</li>
 					<li class="submenu-item">
 						<a href="index.html" class="submenu-link transition">Generic - Pravila knjiženja <span class="report-version">v 1.0.1</span></a>
@@ -2225,7 +1245,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading panel-tabs">
 						<ul class="nav nav-tabs" role="tablist">
-							<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Općeniti podaci</a></li>
+							<li role="presentation" class="active"><a href="#basic" aria-controls="basic" role="tab" data-toggle="tab">Općeniti podaci</a></li>
 							<li role="presentation"><a href="#edit-reports-version" aria-controls="edit-reports-version" role="tab" data-toggle="tab">Verzija</a></li>
 							<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Definiranje</a></li>
 							<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Uloge</a></li>
@@ -2234,7 +1254,7 @@
 					<!-- /.panel-heading -->
 					<div class="panel-body">
 						<div class="tab-content">
-							<div role="tabpanel" class="tab-pane active" id="home">
+							<div role="tabpanel" class="tab-pane active" id="basic">
 								<div class="form-edit-basic-data">
 									<form>
 										<div class="row">

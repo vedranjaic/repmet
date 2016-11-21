@@ -9,12 +9,19 @@
 				ABC 
 				<i class="icon fa fa-sort"></i>
 			</span>
+			<div class="main-menu-admin-new pull-right">
+				<a href="edit-new-group.html" class="btn btn-default btn-sm"><i class="icon fa fa-plus"></i> Nova grupa</a>
+			</div>
 			<div class="main-menu-sort pull-right">
 				<select class="form-control input-sm">
 					<option selected>ABC</option>
 					<option>R.br.</option>
 				</select>
 			</div>
+		</li>
+		<li class="main-menu-create-new hidden">
+			<p>Trenutno ne postoji niti jedna grupa, molimo Vas da kreirate novu.</p>
+			<a href="edit-new-group.html" class="btn btn-default btn-sm">Kreiraj novu grupu</a>
 		</li>
 		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "ALM", "main-menu-active-state": "active", "main-menu-disabled": "", "collapse-submenu-state": "in", "main-menu-collapseID": "collapseSubMenu08"})
 		@@include('main-menu/_main-menu-item.html', {"main-menu-item": "DWH Proizvodi", "main-menu-active-state": "", "main-menu-disabled": "", "collapse-submenu-state": "", "main-menu-collapseID": "collapseSubMenu10"})

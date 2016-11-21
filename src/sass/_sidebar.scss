@@ -1,6 +1,6 @@
 // Main menu
 .main-menu {
-	width: 300px;
+	width: 330px;
 	position: fixed;
 	top: 70px;
 	height: 100%;
@@ -21,6 +21,11 @@
 		&:focus {
 			text-decoration: none;
 		}
+	}
+	// New group
+	.main-menu-create-new {
+		padding: 4px 20px;
+		color: $grey-medium-3;
 	}
 	// Main menu header
 	.main-menu-header {
@@ -44,6 +49,16 @@
 			background-color: transparent !important;
 		}
 	}
+	.main-menu-admin-new {
+		display: none;
+		margin-top: -3px;
+		margin-left: 10px;
+		.btn-sm {
+			font-size: 10px;
+			padding-top: 1px;
+			padding-bottom: 1px;
+		}
+	}
 	// Main menu item
 	.main-menu-item {
 		position: relative;
@@ -54,25 +69,44 @@
 				opacity: 1;
 			}
 		}
+		.main-menu-link {
+			&:before {
+				content: '\f07b';
+				font-family: 'FontAwesome';
+				margin-right: 4px;
+			}
+		}
 		&.active {
 			& > .main-menu-link {
 				padding-left: 15px;
+				&:before {
+					content: '\f07c';
+					margin-right: 2px;
+				}
 				& + .submenu {
 					.submenu-item {
 						.submenu-link {
 							&:hover,
 							&:focus {
-								padding-left: 25px;
+								padding-left: 35px;
 							}
 						}
 					}
 				}
 			}
 		}
+		&.disabled {
+			& > .main-menu-link {
+				&:before {
+					content: '\f114';
+				}
+			}
+		}
 		.submenu-item {
+			position: relative;
 			.submenu-link {
 				vertical-align: bottom;
-				padding-left: 25px;
+				padding-left: 35px;
 				border-left: 5px solid transparent;
 				&:hover {
 					.report-version {
@@ -90,22 +124,23 @@
 		}
 	}
 	// Edit button
-	.dropdown-group-settings {
+	.dropdown-group-settings,
+	.dropdown-report-settings {
 		@include transition;
 		position: absolute;
 		top: 0;
-		right: 45px;
-		opacity: 0;
+		right: 0;
 		&.open {
 			opacity: 1;
 		}
-		.btn-group-settings {
+		.btn-group-settings,
+		.btn-report-settings {
 			text-decoration: none;
 			font-size: 10px;
 			line-height: 27px;
 			padding: 7px 10px;
 			color: $grey-medium-3;
-			background-color: rgba($white, 0.3);
+			// background-color: rgba($white, 0.3);
 			&:hover,
 			&:focus {
 				color: $grey-dark;
@@ -217,7 +252,7 @@
 	// Branding info
 	.branding-info {
 		position: fixed;
-		width: 300px;
+		width: 330px;
 		max-height: 53px;
 		bottom: 0;
 		.master-brand {
