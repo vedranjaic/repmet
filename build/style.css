@@ -7438,6 +7438,13 @@ body {
   font-family: "DINRounded-Regular";
 }
 
+a {
+  color: #f37021;
+}
+a:hover, a:focus, a:active {
+  color: #d5580c;
+}
+
 .form-control {
   box-shadow: none;
 }
@@ -7611,6 +7618,12 @@ body {
   right: 0;
 }
 
+.section-title {
+  margin-bottom: 1em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c0c4c8;
+}
+
 .table {
   margin-bottom: 0;
 }
@@ -7685,6 +7698,17 @@ body {
 
 .translation .language-flag {
   width: 16px;
+}
+
+.btn-translate:hover, .btn-translate:focus {
+  text-decoration: none;
+}
+.btn-translate:before {
+  content: '\f067';
+  font-family: 'FontAwesome';
+}
+.btn-translate[aria-expanded="true"]:before {
+  content: '\f068';
 }
 
 .dropdown-submenu {
@@ -8216,6 +8240,23 @@ body {
 }
 .table-edit-report-version .version-current td {
   background-color: #f0f0f0;
+}
+
+.table-edit-report-definition td.definition-status {
+  width: 112px;
+}
+.table-edit-report-definition .checkbox {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 16px;
+  height: 16px;
+}
+.table-edit-report-definition .checkbox label {
+  min-height: 16px;
+}
+.table-edit-report-definition .checkbox label:after {
+  padding-left: 1px;
 }
 
 .form-edit-roles {

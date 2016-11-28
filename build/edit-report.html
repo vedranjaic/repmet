@@ -1279,11 +1279,12 @@
 										</div>
 									</form>
 									<div class="translation">
-										<a class="btn-block" data-toggle="collapse" href="#collapseExampleEN" aria-expanded="false" aria-controls="collapseExampleEN">
-											<i class="icon fa fa-plus"></i> Dodaj prijevod za EN
+										<a class="btn-translate btn-block" data-toggle="collapse" href="#collapseExampleEN" aria-expanded="false" aria-controls="collapseExampleEN" data-text=" Ukloni prijevod za EN">
+											Dodaj prijevod za EN
 										</a>
 										<div class="collapse" id="collapseExampleEN">
 											<!-- <img src="assets/images/flags/gb.svg" alt="EN" class="language-flag"> ENGLISH -->
+											<h4 class="section-title">English</h4>
 											<form>
 												<div class="row">
 													<div class="form-group col-sm-8">
@@ -1308,11 +1309,12 @@
 											</form>
 										</div>
 										<!-- /.collapse -->
-										<a class="btn-block" data-toggle="collapse" href="#collapseExampleIT" aria-expanded="false" aria-controls="collapseExampleIT">
-											<i class="icon fa fa-plus"></i> Dodaj prijevod za IT
+										<a class="btn-translate btn-block" data-toggle="collapse" href="#collapseExampleIT" aria-expanded="false" aria-controls="collapseExampleIT" data-text=" Ukloni prijevod za IT">
+											Dodaj prijevod za IT
 										</a>
 										<div class="collapse" id="collapseExampleIT">
 											<!-- <img src="assets/images/flags/gb.svg" alt="EN" class="language-flag"> ENGLISH -->
+											<h4 class="section-title">Italiano</h4>
 											<form>
 												<div class="row">
 													<div class="form-group col-sm-8">
@@ -1371,9 +1373,60 @@
 								</div>
 								<!-- /.table-edit-reports-version -->
 							</div>
-							<div role="tabpanel" class="tab-pane" id="messages">3</div>
+							<div role="tabpanel" class="tab-pane" id="messages">
+								<div class="table-edit-report-definition table-responsive">
+									<table class="table table-hover">
+										<thead>
+											<tr>
+												<th>Domena</th>
+												<th class="text-center">Aktivno</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="definition-domain">Domena 01</td>
+												<td class="definition-status definition-active" align="center">
+													<div class="checkbox">
+														<input id="checkboxDomain01" type="checkbox" checked>
+														<label for="checkboxDomain01"></label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="definition-domain">Domena 02</td>
+												<td class="definition-status definition-active" align="center">
+													<div class="checkbox">
+														<input id="checkboxDomain02" type="checkbox" checked>
+														<label for="checkboxDomain02"></label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="definition-domain">Domena 03</td>
+												<td class="definition-status definition-active" align="center">
+													<div class="checkbox">
+														<input id="checkboxDomain03" type="checkbox" checked>
+														<label for="checkboxDomain03"></label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="definition-domain">Domena 04</td>
+												<td class="definition-status definition-active" align="center">
+													<div class="checkbox">
+														<input id="checkboxDomain04" type="checkbox" checked>
+														<label for="checkboxDomain04"></label>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- /.table-edit-report-definition -->
+							</div>
 							<div role="tabpanel" class="tab-pane" id="settings">
 								<div class="form-edit-roles">
+									<h4 class="section-title">Vlasnici</h4>
 									<form>
 										<div class="row">
 											<div class="form-group col-sm-4">
@@ -1384,7 +1437,7 @@
 												<label for="repmet-report-role-fullname">Ime i prezime:</label>
 												<input type="text" class="form-control" id="repmet-report-role-fullname">
 											</div>
-											<div class="form-group col-sm-3">
+											<div class="form-group col-sm-2">
 												<label for="repmet-report-role-sector">Sektor:</label>
 												<select class="form-control" id="repmet-report-role-sector">
 													<option selected>ABC</option>
@@ -1392,7 +1445,36 @@
 													<option>GHI</option>
 												</select>
 											</div>
-											<div class="form-group col-sm-1">
+											<div class="form-group col-sm-2">
+												<label for="repmet-report-role-add" class="label-add-user">Dodaj</label>
+												<a href="#" class="btn btn-success btn-add-user">Dodaj</a>
+											</div>
+										</div>
+									</form>
+								</div>
+								<!-- /.form-edit-roles -->
+
+								<div class="form-edit-roles">
+									<h4 class="section-title">Notifikacijska lista</h4>
+									<form>
+										<div class="row">
+											<div class="form-group col-sm-4">
+												<label for="repmet-report-role-username">Korisničko ime:</label>
+												<input type="text" class="form-control" id="repmet-report-role-username">
+											</div>
+											<div class="form-group col-sm-4">
+												<label for="repmet-report-role-fullname">Ime i prezime:</label>
+												<input type="text" class="form-control" id="repmet-report-role-fullname">
+											</div>
+											<div class="form-group col-sm-2">
+												<label for="repmet-report-role-sector">Sektor:</label>
+												<select class="form-control" id="repmet-report-role-sector">
+													<option selected>ABC</option>
+													<option>DEF</option>
+													<option>GHI</option>
+												</select>
+											</div>
+											<div class="form-group col-sm-2">
 												<label for="repmet-report-role-add" class="label-add-user">Dodaj</label>
 												<a href="#" class="btn btn-success btn-add-user">Dodaj</a>
 											</div>

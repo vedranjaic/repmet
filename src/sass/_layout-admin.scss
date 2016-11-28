@@ -46,6 +46,27 @@
 		}
 	}
 }
+// Definition
+.table-edit-report-definition {
+	td {
+		&.definition-status {
+			width: 112px;
+		}
+	}
+	.checkbox {
+		display: inline-block;
+		margin-top: 0;
+		margin-bottom: 0;
+		width: 16px;
+		height: 16px;
+		label {
+			min-height: 16px;
+			&:after {
+				padding-left: 1px;
+			}
+		}
+	}
+}
 // Roles
 .form-edit-roles {
 	padding-top: 8px;

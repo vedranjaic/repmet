@@ -58,6 +58,19 @@ $('.submenu-item > a').click(function() {
 });
 
 
+
+// TOGGLE TRANSLATION
+$(".btn-translate").on("click", function() {
+	var el = $(this);
+	if (el.text() == el.data("text")) {
+		el.text(el.data("text-original"));
+	} else {
+		el.data("text-original", el.text());
+		el.text(el.data("text"));
+	}
+});
+
+
 //
 // --- [ PRESENTATION ] --- //
 //

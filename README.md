@@ -1,7 +1,7 @@
 # RepMet
 
 ### Administracija
-- dodati `.administration` klasu u `<body>` za vrijeme administracije sadržaja
+- dodati `.role-administrator` klasu u `<body>` za vrijeme administracije sadržaja
 
 ### Panels
 - kolumne unutar `.panela` moraju imati klasu na parentu `.panel-columns` (npr. `.panel-heading.panel-columns`)

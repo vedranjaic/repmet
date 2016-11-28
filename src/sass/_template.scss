@@ -8,6 +8,15 @@ body {
 	font-family: $font-cond-regular;
 }
 
+a {
+	color: $pbz-orange;
+	&:hover,
+	&:focus,
+	&:active {
+		color: darken($pbz-orange, 10%);
+	}
+}
+
 // Forms
 .form-control {
 	// Theme
@@ -203,6 +212,11 @@ body {
 	// padding-top: 10px;
 	// margin-bottom: 30px;
 }
+.section-title {
+	margin-bottom: 1em;
+	padding-bottom: 10px;
+	border-bottom: 1px solid $grey-medium-1;
+}
 
 // Tables
 .table {
@@ -294,6 +308,21 @@ body {
 .translation {
 	.language-flag {
 		width: 16px;
+	}
+}
+.btn-translate {
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+	&:before {
+		content: '\f067';
+		font-family: 'FontAwesome';
+	}
+	&[aria-expanded="true"] {
+		&:before {
+			content: '\f068';
+		}
 	}
 }
 
