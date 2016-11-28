@@ -40,13 +40,21 @@
 	padding-right: 0;
 }
 
+// Toolbar set
+.toolbar-set {
+	line-height: 70px !important;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
 // Collapse
 .navbar-toggle {
 	display: block;
 	float: left;
 	border: 0;
 	margin: 0;
-	padding: 20px 25px;
+	padding: 0 20px;
 	&:hover,
 	&:focus {
 		background-color: transparent !important;
@@ -76,7 +84,7 @@
 	.btn-search {
 		font-size: 1.4em;
 		color: $grey-medium-2;
-		padding: 24px 25px;
+		padding: 0 20px;
 	}
 	.search-bar {
 		@include transition;
@@ -148,10 +156,10 @@
 .toolbar-options {
 	float: left;
 	position: relative;
+	padding: 0 20px;
 	.btn-options {
 		font-size: 1.4em;
 		color: $grey-medium-2;
-		padding: 20px 22px;
 		.fa {
 			margin-left: 10px;
 		}
@@ -163,9 +171,9 @@
 	float: left;
 	margin-right: 50px;
 	position: relative;
+	max-height: 70px;
 	.btn-notifications {
-		padding: 0 23px;
-		line-height: 70px;
+		padding: 0 25px;
 		color: $grey-medium-2;
 		display: inline-block;
 		&:hover,
@@ -184,8 +192,6 @@
 		}
 	}
 	.profile-name {
-		padding-top: 23px;
-		padding-bottom: 20px;
 		font-size: 1.1em;
 		color: $grey-medium-2;
 		display: inline-block;

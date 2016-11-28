@@ -7507,6 +7507,12 @@ a:hover, a:focus, a:active {
   padding-bottom: 5px;
 }
 
+.dropdown-menu {
+  margin-top: 0;
+  border: 0;
+  border-radius: 0 0 2px 2px;
+}
+
 .checkbox {
   padding-left: 20px;
 }
@@ -7796,12 +7802,19 @@ a:hover, a:focus, a:active {
   padding-right: 0;
 }
 
+.toolbar-set {
+  line-height: 70px !important;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 .navbar-toggle {
   display: block;
   float: left;
   border: 0;
   margin: 0;
-  padding: 20px 25px;
+  padding: 0 20px;
 }
 .navbar-toggle:hover, .navbar-toggle:focus {
   background-color: transparent !important;
@@ -7824,7 +7837,7 @@ a:hover, a:focus, a:active {
 .search .btn-search {
   font-size: 1.4em;
   color: #848c94;
-  padding: 24px 25px;
+  padding: 0 20px;
 }
 .search .search-bar {
   transition: all 300ms;
@@ -7887,11 +7900,11 @@ a:hover, a:focus, a:active {
 .toolbar-options {
   float: left;
   position: relative;
+  padding: 0 20px;
 }
 .toolbar-options .btn-options {
   font-size: 1.4em;
   color: #848c94;
-  padding: 20px 22px;
 }
 .toolbar-options .btn-options .fa {
   margin-left: 10px;
@@ -7901,10 +7914,10 @@ a:hover, a:focus, a:active {
   float: left;
   margin-right: 50px;
   position: relative;
+  max-height: 70px;
 }
 .toolbar-profile .btn-notifications {
-  padding: 0 23px;
-  line-height: 70px;
+  padding: 0 25px;
   color: #848c94;
   display: inline-block;
 }
@@ -7922,8 +7935,6 @@ a:hover, a:focus, a:active {
   margin-left: -0.4em;
 }
 .toolbar-profile .profile-name {
-  padding-top: 23px;
-  padding-bottom: 20px;
   font-size: 1.1em;
   color: #848c94;
   display: inline-block;
