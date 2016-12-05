@@ -302,6 +302,11 @@ a {
 .alert {
 	margin: -15px;
 	border-radius: 0 0 2px 2px;
+	&-success {
+		background-color: lighten($pbz-green, 70%);
+		border-color: transparent;
+		color: $pbz-green;
+	}
 	&-danger {
 		background-color: rgba($pbz-red, 0.2);
 		border-color: transparent;

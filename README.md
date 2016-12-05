@@ -12,3 +12,6 @@
 
 ### Forme
 - `.form-group` mora imati dodatnu klasu na osnovu elementa kojeg sadrži (npr. `.form-group.form-group-select`)
+
+### Alert
+- globalni alert (unutar navbara) poziva se dodavanjem klase `.show` na `.alert`

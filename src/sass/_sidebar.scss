@@ -7,9 +7,19 @@
 	margin-bottom: -70px;
 	padding-top: 20px;
 	overflow-y: auto;
-	& > ul {
+	&-heading {
+		position: fixed;
+		top: 70px;
+		z-index: 10000;
+		width: 330px;
+		height: 45px;
+		padding-top: 15px;
+		background-color: $grey-light-2;
+	}
+	&-list {
 		// Negative margin + .branding-info
-		padding-bottom: 125px;
+		padding-bottom: 175px;
+		padding-top: 25px;
 	}
 	.main-menu-link,
 	.submenu-link {
@@ -69,7 +79,8 @@
 				opacity: 1;
 			}
 		}
-		.main-menu-link {
+		.main-menu-link,
+		.subgroup-link {
 			&:before {
 				content: '\f07b';
 				font-family: 'FontAwesome';
@@ -119,7 +130,7 @@
 				float: right;
 				font-size: 12px;
 				vertical-align: bottom;
-				opacity: 0;
+				opacity: 0.5;
 			}
 		}
 	}
@@ -159,7 +170,8 @@
 		}
 	}
 	// Has submenu
-	.has-submenu {
+	.has-submenu,
+	.has-subgroup {
 		position: relative;
 		.submenu-arrow {
 			text-rendering: auto;
@@ -172,6 +184,22 @@
 			}
 		}
 	}
+	.has-subgroup {
+		& > .subgroup {
+			.main-menu-link {
+				padding-left: 35px;
+			}
+			.submenu {
+				.submenu-link {
+					padding-left: 55px;
+					&:hover,
+					&:focus {
+						padding-left: 55px !important;
+					}
+				}
+			}
+		}
+	}
 	.edit-mode {
 		background-color: $grey-medium-3 !important;
 		color: $white !important;
@@ -179,74 +207,9 @@
 			// content: '|';
 		}
 	}
-	// Report settings
-	.report-settings {
-		background-color: darken($grey-light-2, 1%);
-		border-left: 5px solid transparent;
-		// padding-left: 30px;
-		table {
-			tr {
-				td {
-					text-transform: uppercase;
-					font-size: 11px;
-					color: $grey-medium-3;
-					border-bottom: 0;
-					// padding-left: 0;
-					// padding-right: 0;
-					&:first-child {
-						padding-left: 25px;
-					}
-					a {
-						@include transition;
-						color: $white;
-						&:hover {
-							text-decoration: none;
-							color: $grey-light-2;
-						}
-					}
-				}
-			}
-			tbody {
-				& + tbody {
-					border-top: 0;
-				}
-			}
-			.report-settings-actions {
-				tr {
-					td {
-						padding-top: 10px;
-						padding-bottom: 10px;
-						background-color: $grey-medium-3;
-						color: $white;
-					}
-				}
-				.report-settings-status {
-					.icon {
-						margin-top: 1px;
-						margin-right: 13px;
-					}
-					&.status-active {
-						.icon {
-							color: $func-green;
-						}
-					}
-				}
-			}
-			.table-head {
-				tr {
-					td {
-						background-color: darken($grey-light-2, 5%);
-						color: $white;
-						padding-top: 3px;
-						padding-bottom: 3px;
-					}
-				}
-			}
-		}
-	}
 	// Main menu closed
 	.main-menu-closed & {
-		width: 0;
+		transform: translateX(-330px);
 		overflow: hidden;
 	}
 	// Branding info

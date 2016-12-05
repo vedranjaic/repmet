@@ -78,6 +78,51 @@
 	}
 }
 
+// Alert
+.navbar {
+	.alert {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 330px;
+		margin: 0;
+		z-index: 1000;
+		font-size: 1.2em;
+		padding: 22px 50px;
+		transform: translateY(-70px);
+		strong {
+			font-family: $font-cond-bold;
+		}
+		&.show {
+			animation: alertUp 5s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+		}
+	}
+}
+@keyframes alertUp {
+	0% {
+		transform: translateY(-70px);
+		opacity: 0;
+	}
+	1% {
+		opacity: 1;
+	}
+	4% {
+		transform: translateY(0px);
+	}
+	95% {
+		transform: translateY(0px);
+	}
+	99% {
+		transform: translateY(-70px);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-70px);
+		opacity: 0;
+	}
+}
+
 // Search
 .search {
 	// Search toggle icon

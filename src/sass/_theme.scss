@@ -46,8 +46,7 @@
 		.main-menu-item {
 			&:hover,
 			&:focus {
-				.main-menu-link,
-				.active .submenu-link {
+				.main-menu-link {
 					background-color: darken($grey-light-2, 5%);
 				}
 			}
