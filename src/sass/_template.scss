@@ -143,9 +143,12 @@ a {
 
 // Content
 .content {
-	margin-left: 380px;
+	position: relative;
+	margin-left: 330px;
 	margin-right: 50px;
-	margin-top: 100px;
+	margin-top: 70px;
+	padding-left: 50px;
+	padding-top: 30px;
 	&:before {
 		content: '';
 		position: fixed;
@@ -157,7 +160,8 @@ a {
 		background-position: 50%, 50%;
 	}
 	.main-menu-closed & {
-		margin-left: 50px;
+		// margin-left: 50px;
+		margin-left: 0;
 	}
 }
 

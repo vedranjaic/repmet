@@ -210,6 +210,7 @@
 	// Main menu closed
 	.main-menu-closed & {
 		transform: translateX(-330px);
+		// width: 0;
 		overflow: hidden;
 	}
 	// Branding info

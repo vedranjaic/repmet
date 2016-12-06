@@ -1,0 +1,61 @@
+// Stavke menu
+.stavke-menu {
+	// Header
+	&-header {
+		.level-select {
+			display: inline;
+			max-width: 35px;
+		}
+	}
+	.stavke-items {
+		li {
+			line-height: 1.5em;
+			&.active {
+				& > .stavka-collapser,
+				& > .stavke-shortcode {
+					color: $pbz-orange;
+				}
+			}
+		}
+	}
+	.stavka-collapser,
+	.stavke-shortcode {
+		@include transition;
+		&:hover,
+		&:focus,
+		&:active,
+		&.active {
+			text-decoration: none;
+			color: $pbz-orange;
+		}
+	}
+	.stavka-collapser {
+		&:before {
+			content: '\f147';
+			font-family: $font-fa;
+			color: $grey-medium-2;
+		}
+		&.collapsed {
+			&:before {
+				content: '\f196';
+				color: $pbz-orange;
+			}
+		}
+	}
+	.stavke-shortcode {
+		@extend %text-overflow;
+		width: 93%;
+		color: $grey-medium-2;
+		span {
+			color: $pbz-orange;
+			display: inline-block;
+			min-width: 50px;
+		}
+	}
+	// Level 01
+	.collapse {
+		&-l1 {
+			padding-left: 15px;
+		}
+	}
+}

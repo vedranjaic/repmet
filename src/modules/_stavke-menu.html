@@ -1,0 +1,27 @@
+<aside class="stavke-menu nav transition col-sm-4" id="stavke-menu-accordion">
+	<div class="stavke-menu-header row">
+		<div class="col-sm-3">
+			<h3 class="panel-title">Retci</h3>
+		</div>
+		<!-- /.col-sm-3 -->
+		<div class="form-group form-group-select text-right col-sm-9">
+			<label for="row-level">Dubina nivoa za prikaz:</label>
+			<select class="level-select form-control input-sm" id="row-level">
+				<option selected>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select>
+		</div>
+		<!-- /.col-sm-9 -->
+	</div>
+	<!-- /.row -->
+	<ul class="stavke-items list-unstyled">
+		@@include('stavke-menu/_stavke-aktiva.html')
+		@@include('stavke-menu/_stavke-ostale-stavke.html')
+		@@include('stavke-menu/_stavke-izvanbilancna-izlozenost.html')
+		@@include('stavke-menu/_stavke-pasiva.html')
+	</ul>
+</aside>
+<!-- /.stavke-menu -->

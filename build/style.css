@@ -7302,6 +7302,14 @@ button.close {
   display: none;
 }
 
+.stavke-menu .stavke-shortcode {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
 .transition {
   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
   box-sizing: border-box;
@@ -7558,9 +7566,12 @@ a:hover, a:focus, a:active {
 }
 
 .content {
-  margin-left: 380px;
+  position: relative;
+  margin-left: 330px;
   margin-right: 50px;
-  margin-top: 100px;
+  margin-top: 70px;
+  padding-left: 50px;
+  padding-top: 30px;
 }
 .content:before {
   content: '';
@@ -7573,7 +7584,7 @@ a:hover, a:focus, a:active {
   background-position: 50%, 50%;
 }
 .main-menu-closed .content {
-  margin-left: 50px;
+  margin-left: 0;
 }
 
 .page-heading {
@@ -8407,6 +8418,51 @@ a:hover, a:focus, a:active {
 }
 .row-control table thead th:first-child {
   width: 180px;
+}
+
+.stavke-menu-header .level-select {
+  display: inline;
+  max-width: 35px;
+}
+.stavke-menu .stavke-items li {
+  line-height: 1.5em;
+}
+.stavke-menu .stavke-items li.active > .stavka-collapser, .stavke-menu .stavke-items li.active > .stavke-shortcode {
+  color: #f37021;
+}
+.stavke-menu .stavka-collapser,
+.stavke-menu .stavke-shortcode {
+  transition: all 300ms;
+  box-sizing: border-box;
+}
+.stavke-menu .stavka-collapser:hover, .stavke-menu .stavka-collapser:focus, .stavke-menu .stavka-collapser:active, .stavke-menu .stavka-collapser.active,
+.stavke-menu .stavke-shortcode:hover,
+.stavke-menu .stavke-shortcode:focus,
+.stavke-menu .stavke-shortcode:active,
+.stavke-menu .stavke-shortcode.active {
+  text-decoration: none;
+  color: #f37021;
+}
+.stavke-menu .stavka-collapser:before {
+  content: '\f147';
+  font-family: "FontAwesome";
+  color: #848c94;
+}
+.stavke-menu .stavka-collapser.collapsed:before {
+  content: '\f196';
+  color: #f37021;
+}
+.stavke-menu .stavke-shortcode {
+  width: 93%;
+  color: #848c94;
+}
+.stavke-menu .stavke-shortcode span {
+  color: #f37021;
+  display: inline-block;
+  min-width: 50px;
+}
+.stavke-menu .collapse-l1 {
+  padding-left: 15px;
 }
 
 .role-administrator .main-menu .main-menu-admin-new {

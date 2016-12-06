@@ -1281,122 +1281,302 @@
 		<!-- /.container-fluid -->
 	</nav>
 
-	<section class="content transition">
-		
-		<!-- PAGE HEADING -->
-		<div class="page-heading page-heading-report">
-			<i class="icon fa fa-pravila"></i>
-			<h3 class="page-title">
-				Generic - Org za BU / -A1a1 Dospijela potraživanja
-				<small class="page-category">DWH Proizvodi</small>
-				<span class="page-type">Pravila</span>
-				<span class="page-version">v 1.0.0</span>
-			</h3>
-		</div>
-		<!-- /.page-heading -->
-		
-		<!-- RULES -->
-		<div class="row">
-			<div class="col-sm-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">Prikaži pravila definirana kroz kriterij:</h3>
-					</div>
-					<div class="panel-body">
-						<div class="checkbox">
-							<input id="checkbox01" type="checkbox" checked>
-							<label for="checkbox01">Konto</label>
-						</div>
-						<div class="checkbox">
-							<input id="checkbox02" type="checkbox">
-							<label for="checkbox02">Nis_vrsta_posla</label>
-						</div>
-						<div class="checkbox">
-							<input id="checkbox03" type="checkbox">
-							<label for="checkbox03">Konto_bil_vanbil</label>
-						</div>
-						<div class="checkbox">
-							<input id="checkbox04" type="checkbox" checked>
-							<label for="checkbox04">Konto_dosp</label>
-						</div>
-					</div>
-					<!-- /.panel-body -->
-				</div>
-				<!-- /.panel -->
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">KONTO</h3>
-					</div>
-					<div class="panel-body table-responsive">
-						<table class="table">
-							<thead>
-								<tr>
-									<th>KONTO like</th>
-									<th class="text-center">uklj./isklj.</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>34___50</td>
-									<td align="center"><i class="fa fa-plus"></i></td>
-								</tr>
-								<tr>
-									<td>5000259</td>
-									<td align="center"><i class="fa fa-plus"></i></td>
-								</tr>
-								<tr>
-									<td>5____50</td>
-									<td align="center"><i class="fa fa-plus"></i></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<!-- /.panel-body -->
-				</div>
-				<!-- /.panel -->
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">KONTO_DOSP</h3>
-					</div>
-					<div class="panel-body table-responsive">
-						<table class="table">
-							<thead>
-								<tr>
-									<th>KONTO_DOSP like</th>
-									<th class="text-center">uklj./isklj.</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Dospijeli dug</td>
-									<td align="center"><i class="fa fa-plus"></i></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<!-- /.panel-body -->
-				</div>
-				<!-- /.panel -->
-			</div>
-			<!-- /.col-sm-6 -->
+	<section class="content transition row">
 
-			<div class="col-sm-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">Stavka je povezana s pravilima iz drugih stavki:</h3>
-					</div>
-					<div class="panel-body">
-						<div class="alert alert-danger">
-							<i class="fa fa-warning"></i> Ne postoje zapisi s referenciranim pravilima
-						</div>
-					</div>
-					<!-- /.panel-body -->
+		<aside class="stavke-menu nav transition col-sm-4" id="stavke-menu-accordion">
+			<div class="stavke-menu-header row">
+				<div class="col-sm-3">
+					<h3 class="panel-title">Retci</h3>
 				</div>
-				<!-- /.panel -->
+				<!-- /.col-sm-3 -->
+				<div class="form-group form-group-select text-right col-sm-9">
+					<label for="row-level">Dubina nivoa za prikaz:</label>
+					<select class="level-select form-control input-sm" id="row-level">
+						<option selected>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+				<!-- /.col-sm-9 -->
 			</div>
-			<!-- /.col-sm-6 -->
+			<!-- /.row -->
+			<ul class="stavke-items list-unstyled">
+				<li>
+					<a data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA" class="stavka-collapser collapsed"></a>
+					<a href="#" class="stavke-shortcode">
+						<span>A</span>
+						Aktiva
+					</a>
+					<ul class="list-unstyled collapse collapse-l1" id="collapseStavkaA">
+						<li class="active">
+							<a href="#" data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA1">
+								<i class="fa fa-plus-square-o"></i> 
+							</a>
+							<a href="#" class="stavke-shortcode">
+								<span>A1</span>
+								Potražnja po kreditu (glavnica)
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA1a">
+								<i class="fa fa-plus-square-o"></i> 
+							</a>
+							<a href="#" class="stavke-shortcode">
+								<span>- A1a</span>
+								- od toga VP raspoređeni u portfelj kredita i potraživanja
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA2">
+								<i class="fa fa-plus-square-o"></i> 
+							</a>
+							<a href="#" class="stavke-shortcode">
+								<span>A2</span>
+								Potražnja po kamati
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA">
+						<i class="fa fa-plus-square-o"></i> 
+					</a>
+					<a href="#" class="stavke-shortcode">
+						<span>O</span>
+						Ostale stavke
+					</a>
+					<ul class="list-unstyled collapse collapse-l1" id="collapseStavkaA">
+						<li>
+							<a href="#" data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA1">
+								<i class="fa fa-plus-square-o"></i> 
+							</a>
+							<a href="#" class="stavke-shortcode">
+								<span>O1</span>
+								Potražnja po kreditu (glavnica)
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA1a">
+								<i class="fa fa-plus-square-o"></i> 
+							</a>
+							<a href="#" class="stavke-shortcode">
+								<span>- O1a</span>
+								- od toga VP raspoređeni u portfelj kredita i potraživanja
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA2">
+								<i class="fa fa-plus-square-o"></i> 
+							</a>
+							<a href="#" class="stavke-shortcode">
+								<span>O2</span>
+								Potražnja po kamati
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA">
+						<i class="fa fa-plus-square-o"></i> 
+					</a>
+					<a href="#" class="stavke-shortcode">
+						<span>I</span>
+						Izvanbilančna izloženost
+					</a>
+					<ul class="list-unstyled collapse collapse-l1" id="collapseStavkaA">
+						<li>
+							<a href="#" data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA1">
+								<i class="fa fa-plus-square-o"></i> 
+							</a>
+							<a href="#" class="stavke-shortcode">
+								<span>O1</span>
+								Potražnja po kreditu (glavnica)
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA1a">
+								<i class="fa fa-plus-square-o"></i> 
+							</a>
+							<a href="#" class="stavke-shortcode">
+								<span>- O1a</span>
+								- od toga VP raspoređeni u portfelj kredita i potraživanja
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA2">
+								<i class="fa fa-plus-square-o"></i> 
+							</a>
+							<a href="#" class="stavke-shortcode">
+								<span>O2</span>
+								Potražnja po kamati
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA">
+						<i class="fa fa-plus-square-o"></i> 
+					</a>
+					<a href="#" class="stavke-shortcode">
+						<span>P</span>
+						Pasiva
+					</a>
+					<ul class="list-unstyled collapse collapse-l1" id="collapseStavkaA">
+						<li>
+							<a href="#" data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA1">
+								<i class="fa fa-plus-square-o"></i> 
+							</a>
+							<a href="#" class="stavke-shortcode">
+								<span>O1</span>
+								Potražnja po kreditu (glavnica)
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA1a">
+								<i class="fa fa-plus-square-o"></i> 
+							</a>
+							<a href="#" class="stavke-shortcode">
+								<span>- O1a</span>
+								- od toga VP raspoređeni u portfelj kredita i potraživanja
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="collapse" data-parent="#stavke-menu-accordion" href="#collapseStavkaA2">
+								<i class="fa fa-plus-square-o"></i> 
+							</a>
+							<a href="#" class="stavke-shortcode">
+								<span>O2</span>
+								Potražnja po kamati
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<!-- /.stavke-menu -->
+
+		<div class="page col-sm-8">
+
+			<!-- PAGE HEADING -->
+			<div class="page-heading page-heading-report">
+				<i class="icon fa fa-tasks"></i>
+				<h3 class="page-title">
+					Generic - Org za BU / -A1a1 Dospijela potraživanja
+					<small class="page-category">DWH Proizvodi</small>
+					<span class="page-type">Pravila</span>
+					<span class="page-version">v 1.0.0</span>
+				</h3>
+			</div>
+			<!-- /.page-heading -->
+			
+			<!-- RULES -->
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Prikaži pravila definirana kroz kriterij:</h3>
+						</div>
+						<div class="panel-body">
+							<div class="checkbox">
+								<input id="checkbox01" type="checkbox" checked>
+								<label for="checkbox01">Konto</label>
+							</div>
+							<div class="checkbox">
+								<input id="checkbox02" type="checkbox">
+								<label for="checkbox02">Nis_vrsta_posla</label>
+							</div>
+							<div class="checkbox">
+								<input id="checkbox03" type="checkbox">
+								<label for="checkbox03">Konto_bil_vanbil</label>
+							</div>
+							<div class="checkbox">
+								<input id="checkbox04" type="checkbox" checked>
+								<label for="checkbox04">Konto_dosp</label>
+							</div>
+						</div>
+						<!-- /.panel-body -->
+					</div>
+					<!-- /.panel -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">KONTO</h3>
+						</div>
+						<div class="panel-body table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>KONTO like</th>
+										<th class="text-center">uklj./isklj.</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>34___50</td>
+										<td align="center"><i class="fa fa-plus"></i></td>
+									</tr>
+									<tr>
+										<td>5000259</td>
+										<td align="center"><i class="fa fa-plus"></i></td>
+									</tr>
+									<tr>
+										<td>5____50</td>
+										<td align="center"><i class="fa fa-plus"></i></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- /.panel-body -->
+					</div>
+					<!-- /.panel -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">KONTO_DOSP</h3>
+						</div>
+						<div class="panel-body table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>KONTO_DOSP like</th>
+										<th class="text-center">uklj./isklj.</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dospijeli dug</td>
+										<td align="center"><i class="fa fa-plus"></i></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- /.panel-body -->
+					</div>
+					<!-- /.panel -->
+				</div>
+				<!-- /.col-sm-6 -->
+
+				<div class="col-sm-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Stavka je povezana s pravilima iz drugih stavki:</h3>
+						</div>
+						<div class="panel-body">
+							<div class="alert alert-danger">
+								<i class="fa fa-warning"></i> Ne postoje zapisi s referenciranim pravilima
+							</div>
+						</div>
+						<!-- /.panel-body -->
+					</div>
+					<!-- /.panel -->
+				</div>
+				<!-- /.col-sm-6 -->
+			</div>
+			<!-- /.row -->
+			
 		</div>
-		<!-- /.row -->
+		<!-- /.page -->
+		
 
 	</section>
 	<!-- /.content -->
